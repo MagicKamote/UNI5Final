@@ -6,27 +6,159 @@ body, .container {
   margin: 0;
   padding: 0; }
 
-.header ul {
-  width: 60%;
+.header {
+  width: 100%;
   height: auto;
   display: inline-block;
   position: relative;
-  background-color: #ddd;
-  float: right; }
-  .header ul li {
+  border-bottom: solid 2px #25a555; }
+  .header ul {
+    width: 55.28em;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    float: right;
+    margin: 0; }
+    .header ul li {
+      float: left;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 1.1em;
+      font-weight: 300;
+      margin: 0; }
+      .header ul li a {
+        padding: 1.9em 2em;
+        display: block;
+        color: #555;
+        -webkit-transition: all 0.2s linear 0s;
+        -moz-transition: all 0.2s linear 0s;
+        -ms-transition: all 0.2s linear 0s;
+        -o-transition: all 0.2s linear 0s;
+        transition: all 0.2s linear 0s;
+        border: solid 1px transparent; }
+        .header ul li a:hover {
+          color: #fff;
+          border: solid 1px #25a555;
+          background-color: #25a555;
+          text-decoration: none; }
+      .header ul li:nth-child(4) {
+        height: 28px !important; }
+    .header ul li#searchBarMargin {
+      margin-top: 1.85em;
+      margin-left: 15px;
+      height: 28px;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 1em;
+      font-weight: 300; }
+      .header ul li#searchBarMargin form .input-group {
+        width: 14em; }
+        .header ul li#searchBarMargin form .input-group .form-control.search {
+          width: 100%;
+          height: 28px; }
+  .header #logo {
+    width: 163px;
+    height: 65px;
+    display: inline-block;
+    position: relative;
+    margin: 0.5em 0;
     float: left;
-    margin: 0.8em 2em;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 1.1em;
-    font-weight: 300; }
-    .header ul li a:hover {
-      color: #777; }
+    background-image: url("../images/logo.png");
+    background-size: 163px 65px;
+    margin-left: 3%; }
 
-.input-group {
-  width: 11em; }
+.slider {
+  width: 100%;
+  height: 500px;
+  display: inline-block;
+  position: relative;
+  background-color: #ddd; }
+  .slider #myCarousel {
+    width: 100%;
+    height: 500px;
+    display: inline-block;
+    position: relative; }
+    .slider #myCarousel .carousel-inner .item {
+      width: 100%;
+      height: 500px; }
+      .slider #myCarousel .carousel-inner .item:nth-child(1) {
+        background-image: url("../images/slide1.jpg"); }
+      .slider #myCarousel .carousel-inner .item:nth-child(2) {
+        background-image: url("../images/slide2.jpg"); }
+      .slider #myCarousel .carousel-inner .item:nth-child(3) {
+        background-image: url("../images/slide3.jpg"); }
+      .slider #myCarousel .carousel-inner .item .description {
+        width: 40%;
+        height: auto;
+        display: inline-block;
+        position: relative;
+        color: #fff;
+        padding: 0.5em;
+        background-color: rgba(37, 165, 85, 0.8);
+        top: 18.5em;
+        left: 7%;
+        padding: 1em; }
+        .slider #myCarousel .carousel-inner .item .description h1 {
+          margin: 0;
+          font-family: "Ubuntu", sans-serif;
+          font-size: 3.5em;
+          font-weight: 700;
+          margin-bottom: 0.3em; }
+        .slider #myCarousel .carousel-inner .item .description span {
+          font-family: "Ubuntu", sans-serif;
+          font-size: 1.2em;
+          font-weight: 300;
+          text-indent: 1em; }
+    .slider #myCarousel .carousel-control {
+      width: 9%; }
 
-.form-control.search {
-  width: 10em;
-  height: 28px; }
+.main-content {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  position: relative;
+  margin-top: 5em; }
+  .main-content .sect {
+    width: 48%;
+    height: 500px;
+    display: inline-block;
+    position: relative;
+    margin-top: 0;
+    margin: 1%;
+    padding: 1%; }
+    .main-content .sect span {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 1.2em;
+      font-weight: 300; }
+    .main-content .sect h1 {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 3em;
+      font-weight: 700;
+      color: #25a555; }
+    .main-content .sect:nth-child(1) {
+      float: left; }
+      .main-content .sect:nth-child(1) a {
+        clear: both;
+        width: 155px;
+        height: auto;
+        display: block;
+        position: relative;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 1.5em;
+        font-weight: 300;
+        margin: 2em auto;
+        overflow: hidden;
+        padding: 0.3em 2em;
+        border: solid 1px #25a555;
+        -webkit-transition: all 0.2s linear 0s;
+        -moz-transition: all 0.2s linear 0s;
+        -ms-transition: all 0.2s linear 0s;
+        -o-transition: all 0.2s linear 0s;
+        transition: all 0.2s linear 0s;
+        color: #25a555; }
+        .main-content .sect:nth-child(1) a:hover {
+          text-decoration: none;
+          background-color: #25a555;
+          color: #fff; }
+    .main-content .sect:nth-child(2) {
+      float: left; }
 
 /*# sourceMappingURL=main.css.map */

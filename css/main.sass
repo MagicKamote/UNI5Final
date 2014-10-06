@@ -1,6 +1,6 @@
 $wew: #fff
-$blue: #257da5
-$black: #333
+$blue: #25a555
+$black: #555
 
 =default_style($width,$height,$display: inline-block,$position: relative)
 	width: $width
@@ -23,6 +23,13 @@ $black: #333
 	font-size: $size
 	font-weight: 700	
 
+=animation
+	-webkit-transition: all .2s linear 0s
+	-moz-transition: all .2s linear 0s
+	-ms-transition: all .2s linear 0s
+	-o-transition: all .2s linear 0s
+	transition: all .2s linear 0s
+
 
 body,.container
 	+default_style(100%,auto)
@@ -30,24 +37,134 @@ body,.container
 	padding: 0
 	
 
-.header ul
-	+default_style(60%,auto)
-	background-color: #ddd
-	float: right	
-	li
+.header 
+	+default_style(100%,auto)
+	border-bottom: solid 2px $blue
+	
+	// background-color: #ddd
+
+	ul
+		+default_style(55.28em,auto)
+		float: right	
+		margin: 0
+		li
+			float: left
+			+light(1.1em)
+			
+			margin: 0
+			
+			a
+				padding: 1.9em 2em 
+				
+				display: block
+				color: $black
+				+animation
+				border: solid 1px transparent
+
+				&:hover	
+					// color: #fff
+					// background-color: $blue	
+					color: #fff
+					border: solid 1px $blue
+					background-color: $blue
+					text-decoration: none
+			&:nth-child(4)
+				height: 28px !important
+		li#searchBarMargin
+			margin-top: 1.85em
+			margin-left: 15px
+			height: 28px
+			+light()
+			form
+				.input-group
+					width: 14em	
+					.form-control.search
+						width: 100%
+						height: 28px
+	#logo
+		+default_style(163px,65px)
+		// background-color: #ddd
+		margin: .5em 0
 		float: left
-		margin: .8em 2em 
-		+light(1.1em)
-		a
-			&:hover	
-				color: #777
+		background-image: url('../images/logo.png')
+		background-size: 163px 65px
+		margin-left: 3%
 
-.input-group
-	width: 11em
+.slider
+	+default_style(100%,500px)
+	background-color: #ddd
+	#myCarousel
+		+default_style(100%,500px)
+		.carousel-inner
+			.item
+				width: 100%
+				height: 500px
+				
+				&:nth-child(1)
+					background-image: url('../images/slide1.jpg')
+				&:nth-child(2)
+					background-image: url('../images/slide2.jpg')
+				&:nth-child(3)
+					background-image: url('../images/slide3.jpg')	
+				.description
+					h1
+						margin: 0
+						+bold(3.5em)
+						margin-bottom: .3em
+					span
+						+light(1.2em)
+						text-indent: 1em
+					+default_style(40%,auto)
+					color: #fff
+					padding: .5em
+					background-color: rgba(37,165,85,.8)
+					top: 18.5em
+					left: 7%
+					padding: 1em
+					
+		.carousel-control
+			width: 9%			
+				
+
+.main-content
+	+default_style(100%,auto)
+	// background-color: #ddd
+	margin-top: 5em
+	.sect
+		+default_style(48%,500px)
+		margin-top: 0
+		// background-color: #aaa
+		margin: 1%
+		padding: 1%
+		span
+			+light(1.2em)
+		h1
+			+bold(3em)
+			color: $blue
+			
+		&:nth-child(1)
+			float: left
+			a
+				clear: both
+				+default_style(155px,auto,block)
+				+light(1.5em)
+				margin: 2em auto
+				overflow: hidden
+				padding: .3em 2em
+				border: solid 1px $blue
+				+animation
+				color: $blue
+				&:hover
+					text-decoration: none
+					background-color: $blue
+					color: #fff
+		&:nth-child(2)
+			float: left
 
 
-.form-control.search
-	width: 10em
-	height: 28px
+
+
+
+
 
 				
