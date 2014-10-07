@@ -1,0 +1,94 @@
+$blue: #25a555
+$black: #555
+
+=default_style($width,$height,$display: inline-block,$position: relative)
+	width: $width
+	height: $height
+	display: $display
+	position: $position
+
+=light($size: 1em)
+	font-family: 'Ubuntu', sans-serif
+	font-size: $size
+	font-weight: 300
+
+=regular($size: 1em)
+	font-family: 'Ubuntu', sans-serif
+	font-size: $size
+	font-weight: 400
+
+=bold($size: 1em)
+	font-family: 'Ubuntu', sans-serif
+	font-size: $size
+	font-weight: 700	
+
+=animation
+	-webkit-transition: all .2s linear 0s
+	-moz-transition: all .2s linear 0s
+	-ms-transition: all .2s linear 0s
+	-o-transition: all .2s linear 0s
+	transition: all .2s linear 0s
+
+
+body,.container
+	+default_style(100%,auto)
+	margin: 0
+	padding: 0
+	
+
+.header 
+	+default_style(100%,auto)
+	border-bottom: solid 2px $blue
+	
+	// background-color: #ddd
+
+	ul
+		+default_style(55.28em,auto)
+		float: right	
+		margin: 0
+		li
+			float: left
+			+light(1.1em)
+			
+			margin: 0
+			
+			a
+				padding: 1.9em 2em 
+				
+				display: block
+				color: $black
+				+animation
+				border: solid 1px transparent
+
+				&:hover	
+					// color: #fff
+					// background-color: $blue	
+					color: #fff
+					border: solid 1px $blue
+					background-color: $blue
+					text-decoration: none
+			&:nth-child(4)
+				height: 28px !important
+		li#searchBarMargin
+			margin-top: 1.85em
+			margin-left: 15px
+			height: 28px
+			+light()
+			form
+				.input-group
+					width: 14em	
+					.form-control.search
+						width: 100%
+						height: 28px
+	#logo
+		+default_style(163px,65px)
+		// background-color: #ddd
+		margin: .5em 0
+		float: left
+		background-image: url('../images/logo.png')
+		background-size: 163px 65px
+		margin-left: 3%
+
+.main-content
+	+default_style(100%,auto)
+	margin-top: 5em
