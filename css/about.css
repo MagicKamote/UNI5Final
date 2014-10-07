@@ -71,5 +71,24 @@ body, .container {
   display: inline-block;
   position: relative;
   margin-top: 5em; }
+  .main-content .sect {
+  text-align: center;
+  width: 50em;
+  height: auto;
+  display: table;
+  position: relative;
+  margin: 0 auto;
+  }
+.main-content .sect h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+  color: #25a555;
+}
+.main-content .sect span {
+  font-family: "Ubuntu", sans-serif
+      font-size: 1.2em;
+      font-weight: 300;
+}
 
 /*# sourceMappingURL=about.css.map */
