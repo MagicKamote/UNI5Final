@@ -92,13 +92,13 @@ body,.container
 .about
 	+default_style(100%,auto)
 	#aboutus
-		+default_style(1000px,200px,table)
+		+default_style(62.5em,12.5em,table)
 		margin: 0 auto
 		text-align: center
 		
 		h1
 			color: $blue
-			+bold(2em)
+			+bold(3em)
 			padding: 0
 			line-height: .5em
 
@@ -109,3 +109,33 @@ body,.container
 .main-content
 	+default_style(100%,auto)
 	margin-top: 5em
+	.pics
+		+default_style(100%,auto,table)
+		margin: 0 auto
+	ul
+		+default_style(62.5em,auto)
+		margin: 0 auto
+		display: table
+		height: auto
+		width: auto
+		text-align: center
+		li
+			float: left
+			margin: 1.5em
+			display: table
+			height: 200px
+			width: 210px
+			img
+				height: 150px
+				width: 150px
+				margin: 0 auto
+				display: table
+				border-radius: 300em
+				background-color: $blue
+			h1
+				color: $blue
+				+bold(1.5em)
+				padding: 0
+			span
+				color: $black
+				+light(1em)

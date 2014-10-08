@@ -80,7 +80,7 @@ body, .container {
     .about #aboutus h1 {
       color: #25a555;
       font-family: "Ubuntu", sans-serif;
-      font-size: 2em;
+      font-size: 3em;
       font-weight: 700;
       padding: 0;
       line-height: 0.5em; }
@@ -96,24 +96,45 @@ body, .container {
   display: inline-block;
   position: relative;
   margin-top: 5em; }
-  .main-content .goalsect {
-  text-align: center;
-  width: 50em;
-  height: auto;
-  display: table;
-  position: relative;
-  margin: 0 auto;
-  }
-.main-content .goalsect h1 {
-  font-family: "Ubuntu", sans-serif;
-  font-size: 3em;
-  font-weight: 700;
-  color: #25a555;
-}
-.main-content .goalsect span {
-  font-family: "Ubuntu", sans-serif
-      font-size: 1.2em;
-      font-weight: 300;
-}
+  .main-content .pics {
+    width: 100%;
+    height: auto;
+    display: table;
+    position: relative;
+    margin: 0 auto; }
+  .main-content ul {
+    width: 62.5em;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    display: table;
+    height: auto;
+    width: auto;
+    text-align: center; }
+    .main-content ul li {
+      float: left;
+      margin: 1.5em;
+      display: table;
+      height: 200px;
+      width: 210px; }
+      .main-content ul li img {
+        height: 150px;
+        width: 150px;
+        margin: 0 auto;
+        display: table;
+        border-radius: 300em;
+        background-color: #25a555; }
+      .main-content ul li h1 {
+        color: #25a555;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 1.5em;
+        font-weight: 700;
+        padding: 0; }
+      .main-content ul li span {
+        color: #555;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 1em;
+        font-weight: 300; }
 
 /*# sourceMappingURL=about.css.map */
