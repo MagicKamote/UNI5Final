@@ -96,12 +96,29 @@ body, .container {
   display: inline-block;
   position: relative;
   margin-top: 5em; }
+  .main-content .goalsect {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    text-align: center; }
+    .main-content .goalsect h1 {
+      color: #25a555;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 3em;
+      font-weight: 700;
+      padding: 0; }
+    .main-content .goalsect span {
+      color: #555;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 1.2em;
+      font-weight: 300; }
   .main-content .pics {
     width: 100%;
     height: auto;
-    display: table;
+    display: inline-block;
     position: relative;
-    margin: 0 auto; }
+    margin-top: 3em; }
   .main-content ul {
     width: 62.5em;
     height: auto;
@@ -119,8 +136,8 @@ body, .container {
       height: 200px;
       width: 210px; }
       .main-content ul li img {
-        height: 150px;
-        width: 150px;
+        height: 160px;
+        width: 160px;
         margin: 0 auto;
         display: table;
         border-radius: 300em;
@@ -136,5 +153,40 @@ body, .container {
         font-family: "Ubuntu", sans-serif;
         font-size: 1em;
         font-weight: 300; }
+  .main-content .join {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin-top: 10em; }
+    .main-content .join h1 {
+      color: #25a555;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 3em;
+      font-weight: 300; }
+    .main-content .join a {
+      clear: both;
+      width: 155px;
+      height: auto;
+      display: block;
+      position: relative;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 1.5em;
+      font-weight: 300;
+      margin: 2em auto;
+      overflow: hidden;
+      padding: 0.3em 2em;
+      border: solid 1px #25a555;
+      -webkit-transition: all 0.2s linear 0s;
+      -moz-transition: all 0.2s linear 0s;
+      -ms-transition: all 0.2s linear 0s;
+      -o-transition: all 0.2s linear 0s;
+      transition: all 0.2s linear 0s;
+      color: #25a555; }
+      .main-content .join a:hover {
+        text-decoration: none;
+        background-color: #25a555;
+        color: #fff; }
 
 /*# sourceMappingURL=about.css.map */

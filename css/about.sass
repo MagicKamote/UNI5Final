@@ -109,9 +109,19 @@ body,.container
 .main-content
 	+default_style(100%,auto)
 	margin-top: 5em
+	.goalsect
+		+default_style(100%,auto)
+		text-align: center
+		h1
+			color: $blue
+			+bold(3em)
+			padding: 0
+		span
+			color: $black
+			+light(1.2em)
 	.pics
-		+default_style(100%,auto,table)
-		margin: 0 auto
+		+default_style(100%,auto)
+		margin-top: 3em
 	ul
 		+default_style(62.5em,auto)
 		margin: 0 auto
@@ -126,8 +136,8 @@ body,.container
 			height: 200px
 			width: 210px
 			img
-				height: 150px
-				width: 150px
+				height: 160px
+				width: 160px
 				margin: 0 auto
 				display: table
 				border-radius: 300em
@@ -139,3 +149,24 @@ body,.container
 			span
 				color: $black
 				+light(1em)
+	.join
+		+default_style(100%,auto)
+		text-align: center
+		margin-top: 10em
+		h1
+			color: $blue
+			+light(3em)
+		a
+			clear: both
+			+default_style(155px,auto,block)
+			+light(1.5em)
+			margin: 2em auto
+			overflow: hidden
+			padding: .3em 2em
+			border: solid 1px $blue
+			+animation
+			color: $blue
+			&:hover
+				text-decoration: none
+				background-color: $blue
+				color: #fff
