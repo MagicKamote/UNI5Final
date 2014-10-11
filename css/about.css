@@ -333,4 +333,71 @@ body, .container {
         background-color: #25a555;
         color: #fff; }
 
+.footer {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  background-color: #25a555;
+  color: #fff !important; }
+  .footer .items {
+    width: auto;
+    height: auto;
+    display: table;
+    position: relative;
+    margin: 1% auto; }
+    .footer .items ul {
+      width: auto;
+      height: auto;
+      display: table;
+      position: relative;
+      float: left;
+      margin: 0 3em; }
+      .footer .items ul li {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 1em;
+        font-weight: 300; }
+        .footer .items ul li hr {
+          width: 3%;
+          margin: 0; }
+        .footer .items ul li a {
+          color: #fff;
+          font-family: "Ubuntu", sans-serif;
+          font-size: 1em;
+          font-weight: 300; }
+        .footer .items ul li h1 {
+          font-family: "Ubuntu", sans-serif;
+          font-size: 1em;
+          font-weight: 700; }
+        .footer .items ul li .social-media-icon {
+          width: 35px;
+          height: 35px;
+          background-size: 35px;
+          display: block;
+          background-color: #ddd;
+          margin: 0.3em 0; }
+          .footer .items ul li .social-media-icon span {
+            display: block;
+            margin-left: 40px;
+            position: relative;
+            top: 7px; }
+        .footer .items ul li #smi1 {
+          background-image: url("../images/fb.jpg"); }
+        .footer .items ul li #smi2 {
+          background-image: url("../images/tw.jpg"); }
+        .footer .items ul li #smi3 {
+          background-image: url("../images/gp.jpg"); }
+  .footer .bottom-footer {
+    margin-top: 1em;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1em;
+    font-weight: 300; }
+    .footer .bottom-footer a {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 1em;
+      font-weight: 700;
+      color: #fff; }
+
 /*# sourceMappingURL=about.css.map */
