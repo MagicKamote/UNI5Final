@@ -35,6 +35,9 @@ body,.container
 	+default_style(100%,auto)
 	margin: 0
 	padding: 0
+	overflow-x: hidden
+.container
+	overflow-y: hidden
 	
 
 .header 
@@ -83,7 +86,6 @@ body,.container
 						height: 28px
 	#logo
 		+default_style(163px,65px)
-		// background-color: #ddd
 		margin: .5em 0
 		float: left
 		background-image: url('../images/logo.png')
@@ -109,6 +111,7 @@ body,.container
 				.description
 					h1
 						margin: 0
+						padding: .1em 0
 						+bold(3.5em)
 						margin-bottom: .3em
 					span
@@ -118,7 +121,7 @@ body,.container
 					color: #fff
 					padding: .5em
 					background-color: rgba(37,165,85,.8)
-					top: 18.5em
+					top: 17.5em
 					left: 7%
 					padding: 1em
 					
@@ -128,38 +131,73 @@ body,.container
 
 .main-content
 	+default_style(100%,auto)
-	// background-color: #ddd
-	margin-top: 5em
 	.sect
-		+default_style(48%,500px)
-		margin-top: 0
-		// background-color: #aaa
-		margin: 1%
+		+default_style(100%,auto)
 		padding: 1%
-		span
-			+light(1.2em)
-		h1
-			+bold(3em)
-			color: $blue
-			
-		&:nth-child(1)
+		// background-color: #ddd
+		
+.footer
+	+default_style(100%,auto)
+	padding: 0
+	background-color: $blue
+	color: #fff !important
+	.items
+		+default_style(auto,auto,table)
+		// background-color: #ddd
+		margin: 1% auto
+		// margin: 0 auto
+		ul
+			+default_style(auto,auto,table)	
 			float: left
-			a
-				clear: both
-				+default_style(155px,auto,block)
-				+light(1.5em)
-				margin: 2em auto
-				overflow: hidden
-				padding: .3em 2em
-				border: solid 1px $blue
-				+animation
-				color: $blue
-				&:hover
-					text-decoration: none
-					background-color: $blue
+			margin: 0 3em
+			li
+				+light(1em)
+				hr
+					width: 10em
+					margin: 0
+				a
 					color: #fff
-		&:nth-child(2)
-			float: left
+					+light(1em)
+				h1
+					+bold(1em)
+				.social-media-icon
+					width: 35px
+					height: 35px
+					background-size: 35px
+					display: block
+					background-color: #ddd
+					margin: .3em 0
+						
+					span
+						display: block
+						margin-left: 40px
+						position: relative
+						top: 7px
+				#smi1
+					background-image: url('../images/fb.jpg')
+				#smi2
+					background-image: url('../images/tw.jpg')
+				#smi3
+					background-image: url('../images/gp.jpg')
+	.bottom-footer
+		text-align: center
+		+light(1em)
+		a
+			+bold(1em)
+			color: #fff
+			// color: #f68f4a
+
+	
+					
+			
+				
+					
+					
+
+
+
+
+						
 
 
 
