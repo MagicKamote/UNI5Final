@@ -102,53 +102,197 @@ body, .container {
     display: inline-block;
     position: relative;
     text-align: center; }
-    .main-content .goalsect h1 {
-      color: #25a555;
-      font-family: "Ubuntu", sans-serif;
-      font-size: 3em;
-      font-weight: 700;
-      padding: 0; }
-    .main-content .goalsect span {
-      color: #555;
-      font-family: "Ubuntu", sans-serif;
-      font-size: 1.2em;
-      font-weight: 300; }
+    .main-content .goalsect #goalsect {
+      width: 75em;
+      height: auto;
+      display: table;
+      position: relative;
+      margin: 0 auto; }
+      .main-content .goalsect #goalsect h1 {
+        color: #25a555;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 3em;
+        font-weight: 700;
+        padding: 0; }
+      .main-content .goalsect #goalsect span {
+        color: #555;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 1.2em;
+        font-weight: 300; }
   .main-content .pics {
     width: 100%;
     height: auto;
     display: inline-block;
     position: relative;
     margin-top: 3em; }
-  .main-content ul {
-    width: 62.5em;
+  .main-content .team {
+    width: 71.875em;
     height: auto;
-    display: inline-block;
+    display: table;
     position: relative;
     margin: 0 auto;
-    display: table;
-    height: auto;
-    width: auto;
     text-align: center; }
-    .main-content ul li {
+    .main-content .team #monreal {
+      width: 13.125em;
+      height: 18.75em;
+      display: inline-block;
+      position: relative;
       float: left;
-      margin: 1.5em;
-      display: table;
-      height: 200px;
-      width: 210px; }
-      .main-content ul li img {
-        height: 160px;
-        width: 160px;
-        margin: 0 auto;
+      margin-left: 5em;
+      margin-right: 5em; }
+      .main-content .team #monreal img {
+        width: 12em;
+        height: 12em;
         display: table;
-        border-radius: 300em;
+        position: relative;
+        margin: 0 auto;
+        border-radius: 400em;
         background-color: #25a555; }
-      .main-content ul li h1 {
+      .main-content .team #monreal h1 {
         color: #25a555;
         font-family: "Ubuntu", sans-serif;
         font-size: 1.5em;
         font-weight: 700;
         padding: 0; }
-      .main-content ul li span {
+      .main-content .team #monreal span {
+        color: #555;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 1em;
+        font-weight: 300; }
+    .main-content .team #valero {
+      width: 13.125em;
+      height: 18.75em;
+      display: inline-block;
+      position: relative;
+      float: left;
+      margin-left: 5em;
+      margin-right: 5em; }
+      .main-content .team #valero img {
+        width: 12em;
+        height: 12em;
+        display: table;
+        position: relative;
+        margin: 0 auto;
+        border-radius: 400em;
+        background-color: #25a555; }
+      .main-content .team #valero h1 {
+        color: #25a555;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 1.5em;
+        font-weight: 700;
+        padding: 0; }
+      .main-content .team #valero span {
+        color: #555;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 1em;
+        font-weight: 300; }
+    .main-content .team #estrella {
+      width: 13.125em;
+      height: 18.75em;
+      display: inline-block;
+      position: relative;
+      float: left;
+      margin-left: 5em;
+      margin-right: 5em; }
+      .main-content .team #estrella img {
+        width: 12em;
+        height: 12em;
+        display: table;
+        position: relative;
+        margin: 0 auto;
+        border-radius: 400em;
+        background-color: #25a555; }
+      .main-content .team #estrella h1 {
+        color: #25a555;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 1.5em;
+        font-weight: 700;
+        padding: 0; }
+      .main-content .team #estrella span {
+        color: #555;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 1em;
+        font-weight: 300; }
+    .main-content .team #cruz {
+      width: 13.125em;
+      height: 18.75em;
+      display: inline-block;
+      position: relative;
+      float: left;
+      margin-left: 5em;
+      margin-right: 5em;
+      margin-top: 3em; }
+      .main-content .team #cruz img {
+        width: 12em;
+        height: 12em;
+        display: table;
+        position: relative;
+        margin: 0 auto;
+        border-radius: 400em;
+        background-color: #25a555; }
+      .main-content .team #cruz h1 {
+        color: #25a555;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 1.5em;
+        font-weight: 700;
+        padding: 0; }
+      .main-content .team #cruz span {
+        color: #555;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 1em;
+        font-weight: 300; }
+    .main-content .team #luna {
+      width: 13.125em;
+      height: 18.75em;
+      display: inline-block;
+      position: relative;
+      float: left;
+      margin-left: 5em;
+      margin-right: 5em;
+      margin-top: 3em; }
+      .main-content .team #luna img {
+        width: 12em;
+        height: 12em;
+        display: table;
+        position: relative;
+        margin: 0 auto;
+        border-radius: 400em;
+        background-color: #25a555; }
+      .main-content .team #luna h1 {
+        color: #25a555;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 1.5em;
+        font-weight: 700;
+        padding: 0; }
+      .main-content .team #luna span {
+        color: #555;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 1em;
+        font-weight: 300; }
+    .main-content .team #basco {
+      width: 13.125em;
+      height: 18.75em;
+      display: inline-block;
+      position: relative;
+      float: left;
+      margin-left: 5em;
+      margin-right: 5em;
+      margin-top: 3em; }
+      .main-content .team #basco img {
+        width: 12em;
+        height: 12em;
+        display: table;
+        position: relative;
+        margin: 0 auto;
+        border-radius: 400em;
+        background-color: #25a555; }
+      .main-content .team #basco h1 {
+        color: #25a555;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 1.5em;
+        font-weight: 700;
+        padding: 0; }
+      .main-content .team #basco span {
         color: #555;
         font-family: "Ubuntu", sans-serif;
         font-size: 1em;
