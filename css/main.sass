@@ -43,19 +43,14 @@ body,.container
 .header 
 	+default_style(100%,auto)
 	border-bottom: solid 2px $blue
-	
-	// background-color: #ddd
-
 	ul
 		+default_style(55.28em,auto)
 		float: right	
 		margin: 0
 		li
 			float: left
-			+light(1.1em)
-			
-			margin: 0
-			
+			+light(1.1em)			
+			margin: 0			
 			a
 				padding: 1.9em 2em 
 				
@@ -101,7 +96,7 @@ body,.container
 			.item
 				width: 100%
 				height: 500px
-				
+				background-size: 100%
 				&:nth-child(1)
 					background-image: url('../images/slide1.jpg')
 				&:nth-child(2)
@@ -179,7 +174,43 @@ body,.container
 			&:nth-child(5)
 				.icon
 					background-image: url('../images/icon-package.png')
+	#intro
+		+default_style(100%,auto)
+		text-align: center
+		background-image: url('../images/content2.jpg')
+		background-attachment: fixed
+		background-size: contain
+		color: #fff
+		+light(1.3em)
+		padding: 2em 3%
+		a
+			color: #fff
+			font-size: 1em
+			+default_style(auto,auto,table)
+			+light(.8em)
+			margin: 2em auto
+			border: solid 1px #fff
+			padding: 1em 2.5em
+			+animation
+			&:hover
+				color: #fff
+				background-color: $blue
+	#why
+		+default_style(100%,auto)
+		text-align: center
+		.items
+			+default_style(580px,auto,inline-block)
+			text-align: left
+			vertical-align: top
+			margin: 0 2%
+			padding: 2% 0
+			h1
+				padding: 0
+				+bold(2em)
+				color: $black
 
+		h1
+			+bold(4em)
 
 		
 .footer
