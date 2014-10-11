@@ -1,6 +1,6 @@
 $wew: #fff
 $blue: #25a555
-$black: #555
+$black: #444
 
 =default_style($width,$height,$display: inline-block,$position: relative)
 	width: $width
@@ -134,7 +134,53 @@ body,.container
 	.sect
 		+default_style(100%,auto)
 		padding: 1%
-		// background-color: #ddd
+	#products-icon
+		margin-top: 3em
+		text-align: center
+		h1:nth-child(1)
+			margin-bottom: .8em
+			+bold(4em)
+			color: $black
+		span
+			color: $black
+		a
+			color: $blue
+			font-size: 1em
+			+default_style(auto,auto,table)
+			margin: 4em auto
+			border: solid 1px $blue
+			padding: 1em 2.5em
+			+animation
+			&:hover
+				color: #fff
+				background-color: $blue
+		.items
+			+default_style(265px,auto,inline-block)
+			text-align: center
+			+light(.9em)
+			margin: 1% 2%
+			vertical-align: top
+			h1
+				padding: 0
+				margin: .5em 0
+				+bold(2.1em)
+			.icon
+				+default_style(120px,120px)
+				background-size: 120px
+			&:nth-child(2)
+				.icon
+					background-image: url('../images/icon-wellness.png')
+			&:nth-child(3)
+				.icon
+					background-image: url('../images/icon-beauty.png')
+			&:nth-child(4)
+				.icon
+					background-image: url('../images/icon-lopulent.png')
+			&:nth-child(5)
+				.icon
+					background-image: url('../images/icon-package.png')
+
+
 		
 .footer
 	+default_style(100%,auto)
@@ -153,7 +199,7 @@ body,.container
 			li
 				+light(1em)
 				hr
-					width: 10em
+					width: 3%
 					margin: 0
 				a
 					color: #fff
@@ -180,6 +226,7 @@ body,.container
 				#smi3
 					background-image: url('../images/gp.jpg')
 	.bottom-footer
+		margin-top: 1em
 		text-align: center
 		+light(1em)
 		a

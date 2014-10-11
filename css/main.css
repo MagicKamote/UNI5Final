@@ -32,7 +32,7 @@ body, .container {
       .header ul li a {
         padding: 1.9em 2em;
         display: block;
-        color: #555;
+        color: #444;
         -webkit-transition: all 0.2s linear 0s;
         -moz-transition: all 0.2s linear 0s;
         -ms-transition: all 0.2s linear 0s;
@@ -126,6 +126,66 @@ body, .container {
     display: inline-block;
     position: relative;
     padding: 1%; }
+  .main-content #products-icon {
+    margin-top: 3em;
+    text-align: center; }
+    .main-content #products-icon h1:nth-child(1) {
+      margin-bottom: 0.8em;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 4em;
+      font-weight: 700;
+      color: #444; }
+    .main-content #products-icon span {
+      color: #444; }
+    .main-content #products-icon a {
+      color: #25a555;
+      font-size: 1em;
+      width: auto;
+      height: auto;
+      display: table;
+      position: relative;
+      margin: 4em auto;
+      border: solid 1px #25a555;
+      padding: 1em 2.5em;
+      -webkit-transition: all 0.2s linear 0s;
+      -moz-transition: all 0.2s linear 0s;
+      -ms-transition: all 0.2s linear 0s;
+      -o-transition: all 0.2s linear 0s;
+      transition: all 0.2s linear 0s; }
+      .main-content #products-icon a:hover {
+        color: #fff;
+        background-color: #25a555; }
+    .main-content #products-icon .items {
+      width: 265px;
+      height: auto;
+      display: inline-block;
+      position: relative;
+      text-align: center;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 0.9em;
+      font-weight: 300;
+      margin: 1% 2%;
+      vertical-align: top; }
+      .main-content #products-icon .items h1 {
+        padding: 0;
+        margin: 0.5em 0;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 2.1em;
+        font-weight: 700; }
+      .main-content #products-icon .items .icon {
+        width: 120px;
+        height: 120px;
+        display: inline-block;
+        position: relative;
+        background-size: 120px; }
+      .main-content #products-icon .items:nth-child(2) .icon {
+        background-image: url("../images/icon-wellness.png"); }
+      .main-content #products-icon .items:nth-child(3) .icon {
+        background-image: url("../images/icon-beauty.png"); }
+      .main-content #products-icon .items:nth-child(4) .icon {
+        background-image: url("../images/icon-lopulent.png"); }
+      .main-content #products-icon .items:nth-child(5) .icon {
+        background-image: url("../images/icon-package.png"); }
 
 .footer {
   width: 100%;
@@ -153,7 +213,7 @@ body, .container {
         font-size: 1em;
         font-weight: 300; }
         .footer .items ul li hr {
-          width: 10em;
+          width: 3%;
           margin: 0; }
         .footer .items ul li a {
           color: #fff;
@@ -183,6 +243,7 @@ body, .container {
         .footer .items ul li #smi3 {
           background-image: url("../images/gp.jpg"); }
   .footer .bottom-footer {
+    margin-top: 1em;
     text-align: center;
     font-family: "Ubuntu", sans-serif;
     font-size: 1em;
