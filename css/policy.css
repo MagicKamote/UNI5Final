@@ -71,6 +71,20 @@ body, .container {
   display: inline-block;
   position: relative;
   margin-top: 5em; }
+  .main-content .panel.panel-default {
+    margin-left: 5em;
+    margin-right: 5em; }
+    .main-content .panel.panel-default .panel-heading {
+      color: #555;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 1.5em;
+      font-weight: 700; }
+    .main-content .panel.panel-default .panel-body span {
+      color: #555;
+      font-size: 1em; }
+    .main-content .panel.panel-default .panel-body h1 {
+      color: #555;
+      font-size: 2em; }
   .main-content .policy {
     width: 100%;
     height: auto;
