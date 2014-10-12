@@ -85,6 +85,11 @@ body, .container {
     .main-content .panel.panel-default .panel-body h1 {
       color: #555;
       font-size: 2em; }
+    .main-content .panel.panel-default .panel-body img {
+      width: 62.5em;
+      height: 6.25em;
+      margin-left: 10em;
+      margin-right: 10em; }
   .main-content .policy {
     width: 100%;
     height: auto;
