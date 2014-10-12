@@ -1,4 +1,5 @@
 $(document).ready(function () {
+	
 	var scrollChecker = 0
 	$(".main-content .sect .item").stop().hover(function(){
 		// $(this).stop().animate({

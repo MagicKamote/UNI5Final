@@ -108,7 +108,6 @@ body,.container
 
 .main-content
 	+default_style(100%,auto)
-	margin-top: 5em
 	.goalsect
 		+default_style(100%,auto)
 		text-align: center
@@ -122,122 +121,208 @@ body,.container
 			span
 				color: $black
 				+light(1.2em)
+	#sect1
+		+default_style(100%,529px)
+		padding: 1% 0
+		background-color: #121212
+		margin-top: 0
+		#img1
+			+default_style(917px,517px)
+			float: right
+			background-image: url('../images/about_image2.png')
+			z-index: 1
+		.desc
+			+default_style(550px,auto,inline-block,absolute)
+			// background-color: #ddd
+			+light(1em)
+			z-index: 2
+			left: 2%	
+			top: 5em
+			color: #fff
+			h1
+				+bold(4em)
+				padding: 0
+				color: $blue
+			a
+				padding: 1em 2em
+				color: $blue			
+				display: table
+				margin: 2em auto
+				border: solid 1px $blue
+				+animation
+				&:hover
+					background-color: $blue
+					color: #fff
+			span
+				font-size: 1.3em
+	.goals
+		+default_style(100%,auto)
+		+light(1.3em)
+		text-align: center
+		h1
+			+bold(3em)
+			color: $blue
+		span
+			width: 85%
+			display: inline-block
+
 	.pics
 		+default_style(100%,auto)
-		margin-top: 3em
-	.team
-		+default_style(71.875em,auto,table)//40.625em
-		margin: 0 auto
+		margin-top: 0
+		padding: 4em 0
 		text-align: center
-		#monreal
-			+default_style(13.125em,18.75em)
-			float: left
-			margin-left: 5em
-			margin-right: 5em
-			img
-				+default_style(12em,12em,table)
-				margin: 0 auto
-				border-radius: 400em
-				background-color: $blue
-			h1
-				color: $blue
-				+bold(1.5em)
-				padding: 0
-			span
-				color: $black
-				+light(1em)
-		#valero
-			+default_style(13.125em,18.75em)
-			float: left
-			margin-left: 5em
-			margin-right: 5em
-			img
-				+default_style(12em,12em,table)
-				margin: 0 auto
-				border-radius: 400em
-				background-color: $blue
-			h1
-				color: $blue
-				+bold(1.5em)
-				padding: 0
-			span
-				color: $black
-				+light(1em)
-		#estrella
-			+default_style(13.125em,18.75em)
-			float: left
-			margin-left: 5em
-			margin-right: 5em
-			img
-				+default_style(12em,12em,table)
-				margin: 0 auto
-				border-radius: 400em
-				background-color: $blue
-			h1
-				color: $blue
-				+bold(1.5em)
-				padding: 0
-			span
-				color: $black
-				+light(1em)
-		#cruz
-			+default_style(13.125em,18.75em)
-			float: left
-			margin-left: 5em
-			margin-right: 5em
-			margin-top: 3em
-			img
-				+default_style(12em,12em,table)
-				margin: 0 auto
-				border-radius: 400em
-				background-color: $blue
-			h1
-				color: $blue
-				+bold(1.5em)
-				padding: 0
-			span
-				color: $black
-				+light(1em)
-		#luna
-			+default_style(13.125em,18.75em)
-			float: left
-			margin-left: 5em
-			margin-right: 5em
-			margin-top: 3em
-			img
-				+default_style(12em,12em,table)
-				margin: 0 auto
-				border-radius: 400em
-				background-color: $blue
-			h1
-				color: $blue
-				+bold(1.5em)
-				padding: 0
-			span
-				color: $black
-				+light(1em)
-		#basco
-			+default_style(13.125em,18.75em)
-			float: left
-			margin-left: 5em
-			margin-right: 5em
-			margin-top: 3em
-			img
-				+default_style(12em,12em,table)
-				margin: 0 auto
-				border-radius: 400em
-				background-color: $blue
-			h1
-				color: $blue
-				+bold(1.5em)
-				padding: 0
-			span
-				color: $black
-				+light(1em)
+		h1
+			+bold(4em)
+			color: $blue
+		.item-container
+			+default_style(100%,auto)
+			// background-color: #aaa
+			.items
+				+default_style(auto,auto,inline-block)
+				// background-color: #ddd
+				margin: 1% 2%
+				h1
+					padding: 0
+					margin: 0
+					margin-top: 1em
+					+bold(2.5em)
+					color: $blue
+				span
+					+light(1em)
+				.members-image
+					+default_style(300,300,inline-block)
+					// background-color: #888
+					border-radius: 100em
+					// border: solid 1px #ddd
+				#mem1
+					background-image: url('../images/about/1.jpg')
+				#mem2
+					background-image: url('../images/about/2.jpg')
+				#mem3
+					background-image: url('../images/about/3.jpg')
+				#mem4
+					background-image: url('../images/about/4.jpg')
+				#mem5
+					background-image: url('../images/about/5.jpg')
+				#mem6
+					background-image: url('../images/about/6.jpg')
+
+				
+
+
+
+
+
+
+		// #monreal
+		// 	+default_style(13.125em,18.75em)
+		// 	float: left
+		// 	margin-left: 5em
+		// 	margin-right: 5em
+		// 	img
+		// 		+default_style(12em,12em,table)
+		// 		margin: 0 auto
+		// 		border-radius: 400em
+		// 		background-color: $blue
+		// 	h1
+		// 		color: $blue
+		// 		+bold(1.5em)
+		// 		padding: 0
+		// 	span
+		// 		color: $black
+		// 		+light(1em)
+		// #valero
+		// 	+default_style(13.125em,18.75em)
+		// 	float: left
+		// 	margin-left: 5em
+		// 	margin-right: 5em
+		// 	img
+		// 		+default_style(12em,12em,table)
+		// 		margin: 0 auto
+		// 		border-radius: 400em
+		// 		background-color: $blue
+		// 	h1
+		// 		color: $blue
+		// 		+bold(1.5em)
+		// 		padding: 0
+		// 	span
+		// 		color: $black
+		// 		+light(1em)
+		// #estrella
+		// 	+default_style(13.125em,18.75em)
+		// 	float: left
+		// 	margin-left: 5em
+		// 	margin-right: 5em
+		// 	img
+		// 		+default_style(12em,12em,table)
+		// 		margin: 0 auto
+		// 		border-radius: 400em
+		// 		background-color: $blue
+		// 	h1
+		// 		color: $blue
+		// 		+bold(1.5em)
+		// 		padding: 0
+		// 	span
+		// 		color: $black
+		// 		+light(1em)
+		// #cruz
+		// 	+default_style(13.125em,18.75em)
+		// 	float: left
+		// 	margin-left: 5em
+		// 	margin-right: 5em
+		// 	margin-top: 3em
+		// 	img
+		// 		+default_style(12em,12em,table)
+		// 		margin: 0 auto
+		// 		border-radius: 400em
+		// 		background-color: $blue
+		// 	h1
+		// 		color: $blue
+		// 		+bold(1.5em)
+		// 		padding: 0
+		// 	span
+		// 		color: $black
+		// 		+light(1em)
+		// #luna
+		// 	+default_style(13.125em,18.75em)
+		// 	float: left
+		// 	margin-left: 5em
+		// 	margin-right: 5em
+		// 	margin-top: 3em
+		// 	img
+		// 		+default_style(12em,12em,table)
+		// 		margin: 0 auto
+		// 		border-radius: 400em
+		// 		background-color: $blue
+		// 	h1
+		// 		color: $blue
+		// 		+bold(1.5em)
+		// 		padding: 0
+		// 	span
+		// 		color: $black
+		// 		+light(1em)
+		// #basco
+		// 	+default_style(13.125em,18.75em)
+		// 	float: left
+		// 	margin-left: 5em
+		// 	margin-right: 5em
+		// 	margin-top: 3em
+		// 	img
+		// 		+default_style(12em,12em,table)
+		// 		margin: 0 auto
+		// 		border-radius: 400em
+		// 		background-color: $blue
+		// 	h1
+		// 		color: $blue
+		// 		+bold(1.5em)
+		// 		padding: 0
+		// 	span
+		// 		color: $black
+		// 		+light(1em)
 	.join
 		+default_style(100%,auto)
 		text-align: center
-		margin-top: 10em
+		margin-top: 2em
 		h1
 			color: $blue
 			+light(3em)
@@ -245,7 +330,8 @@ body,.container
 			clear: both
 			+default_style(155px,auto,block)
 			+light(1.5em)
-			margin: 2em auto
+			margin: 0em auto
+			margin-bottom: 3em
 			overflow: hidden
 			padding: .3em 2em
 			border: solid 1px $blue
