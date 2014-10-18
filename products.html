@@ -5,14 +5,34 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<meta name="description" content="A Company of Filipino Young Entrepreneurs that engaged in the Direct Selling of Royale Food Supplements, powdered beverages, Beauty, Skin, & personal care products through a unique distribution method providing income opportunity to all Filipino’s.">
 	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
-	<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
-	<link rel="icon" type="image/png" href="favicon.png" />
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/Reset.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/about.css">
+	<link rel="stylesheet" type="text/css" href="css/products.css">
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function () {
+	$(window).load(function () {
+		$(".nav.nav-pills.nav-stacked li").on("click",function(){
+			  $(".nav.nav-pills li").removeClass("active");
+			  $(this).addClass("active");
+			});
+      	$(document).scroll(function(){
+      		// alert($(this).scrollTop())
+      		
+      		if($(this).scrollTop() >= 340)
+      		{
+      			$('.main-content #products-icon').animate({
+      				"bottom": "0",
+      				"opacity": "1"
+      			},500)
+      		}
+      	})
+      });
+});
+	</script>
 </head>
 <body>
 	<div class="container">
@@ -36,67 +56,61 @@
 				</li>				
 			</ul>			
 		</div>
-		
 		<div class="main-content">
-			<div id="sect1">
-				<div class="desc">
-					<h1>We are UNI5 Wellness</h1>
-					<span>
-						A Group of Filipino Young Entrepreneurs-owned company established in the year 2014 in Quezon City, Philippines engaged in the Direct Selling of Royale Food Supplements, powdered beverages, Beauty, Skin, & personal care products through a unique distribution method providing income opportunity to all Filipino’s.
-
-					</span>
-					<br>
-					<a href="#">BECOME PART OF US</a>
+			<div class="sidebar">
+				<h1>Products</h1>
+				<ul class="nav nav-pills nav-stacked">
+				  <li class="active"><a href="#">All Products<span class="badge">42</span></a></a></li>
+				  <li class=""><a href="#">Wellness<span class="badge">12</span></a></a></li>
+				  <li class=""><a href="#">Beauty<span class="badge">9</span></a></a></li>
+				  <li class=""><a href="#">L'opulent<span class="badge">11</span></a></a></li>
+				  <li class=""><a href="#">Packages<span class="badge">8</span></a></a></li>
+				</ul>
+			</div>
+			<div class='products-container'>
+				<div id='wellness' class="categories"> 
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Item name</h1>
+					</div>
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Item name</h1>
+					</div>
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Item name</h1>
+					</div>
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Item name</h1>
+					</div>
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Item name</h1>
+					</div>
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Item name</h1>
+					</div>
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Item name</h1>
+					</div>
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Item name</h1>
+					</div>
 				</div>
-				<div id="img1"></div>
-			</div>
-			<div class="goals">
-				<h1>ABOUT</h1>
-				<span>
-					Uni5 Wellness International Core Team was created by A Group of Filipino Young Entrepreneurs established in the year 2014 in Quezon City, Philippines that engaged in the Direct Selling of Royale Food Supplements, powdered beverages, Beauty, Skin, & personal care products through a unique distribution method providing income opportunity to all people. With our idea behind this Fast-growing organization worldwide build our mission and vision in the society
-				</span>
-				<h1>MISSION</h1>
-				<span>
-					To be known as a premier trading company that will promote health awareness and maintaining the wealth of each individual around the world.
-				</span>
-				<h1>VISSION</h1>
-				<span>
-					To create a group of professional, success driven grand leaders & develop  them to be world – class entrepreneurs and become productive individual in the society.
-				</span>
-
-			</div>
-			<div class="pics">
-				<h1>MEET OUR TEAM</h1>
-				<div class="item-container">
-					<div id="monreal" class='items'>
-						<div id="mem1" class="members-image"></div>
-						<h1>Chris Monreal</h1>
-						<span>Founder, Corporate Partner</span>
-					</div>
-					
-				</div>
-				<div class="item-container">
-					<div id="luna" class='items'>
-						<div id="mem5" class="members-image"></div>
-						<h1>Noli Luna</h1>
-						<span>Head, Operations</span>
-					</div>
-					<div id="valero" class='items'>
-						<div id="mem2" class="members-image"></div>
-						<h1>Kenji Valero</h1>
-						<span>Head, Sales and Marketing</span>
-					</div>
-					<div id="estrella" class='items'>
-						<div id="mem3" class="members-image"></div>
-						<h1>Jomz Estrella</h1>
-						<span>Head, Logistics and Procurement</span>
-					</div>
-				</div>			
-			</div>
-			<div class="join">
-				<h1>Want to join us?<br>
-				Want to become in our team?</h1>
-				<a href="JavaScript:void(0);">Join us</a>
+				
 			</div>
 		</div>
 		<div class="footer">

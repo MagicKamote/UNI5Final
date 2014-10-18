@@ -22,11 +22,11 @@ body, .container {
     .header ul li {
       float: left;
       font-family: "Ubuntu", sans-serif;
-      font-size: 1.1em;
+      font-size: 0.9em;
       font-weight: 300;
       margin: 0; }
       .header ul li a {
-        padding: 1.9em 2em;
+        padding: 2.4em 2.3em;
         display: block;
         color: #555;
         -webkit-transition: all 0.2s linear 0s;
@@ -261,7 +261,6 @@ body, .container {
       font-size: 1.5em;
       font-weight: 300;
       margin: 0em auto;
-      margin-bottom: 3em;
       overflow: hidden;
       padding: 0.3em 2em;
       border: solid 1px #25a555;

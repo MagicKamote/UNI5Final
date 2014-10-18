@@ -3700,7 +3700,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #fff;
-  background-color: #428bca;
+  background-color: #25a555;
 }
 .nav-stacked > li {
   float: none;
@@ -4538,7 +4538,7 @@ a.badge:focus {
 }
 a.list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #428bca;
+  color: #25a555;
   background-color: #fff;
 }
 .nav-pills > li > a > .badge {

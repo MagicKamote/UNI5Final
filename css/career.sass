@@ -32,17 +32,55 @@ $black: #555
 .main-content
 	+default_style(100%,auto)
 	margin-top: 5em
-	.form-group
-		+default_style(100%,auto)
-		label
-			width: 15%
-			display: inline-block !important
-			vertical-align: top
-		input
-			width: 20%
-			display: inline-block !important
-		textarea
-			width: 60.6%
-			display: inline-block !important
+	text-align: center
+	a
+		+light(1.1em)
+		padding: .7em 3em
+		border: solid 1px $blue
+		color: $blue
+		+animation
+		margin: 3em auto
+		display: table
+		&:hover
+			background-color: $blue
+			color: #fff
+	.h1
+		+bold(3em)
+		padding: 0
+	.span
+		width: 80%
+		+light(1em)
+		display: inline-block
+		margin-bottom: 3em
+	.content
+		+default_style(75em,auto,inline-block !important)
+		// background-color: #ddd
 
-			
+		.form-group			
+			+default_style(auto,auto,inline-block)
+			label
+				width: 12em
+				display: inline-block !important
+				vertical-align: top
+				text-align: left
+				padding: 0 1em
+				line-height: 2.5em
+			input
+				width: 20em
+				display: inline-block !important
+				text-align: left
+			textarea
+				width: 60.6em
+				display: inline-block !important
+				text-align: left
+			select
+				width: 20em
+				display: inline-block !important
+			&:nth-child(4)
+				label
+					&:nth-child(1)		
+						margin-left: -8em
+			&:nth-child(5)
+				label
+					&:nth-child(1)		
+						margin-left: -8em

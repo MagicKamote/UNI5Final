@@ -130,184 +130,61 @@ body, .container {
     background-size: 163px 65px;
     margin-left: 3%; }
 
-.slider {
-  width: 100%;
-  height: 500px;
-  display: inline-block;
-  position: relative;
-  background-color: #ddd; }
-  .slider #myCarousel {
-    width: 100%;
-    height: 500px;
-    display: inline-block;
-    position: relative; }
-    .slider #myCarousel .carousel-inner .item {
-      width: 100%;
-      height: 500px;
-      background-size: 100%; }
-      .slider #myCarousel .carousel-inner .item:nth-child(1) {
-        background-image: url("../images/slide/slide1.jpg"); }
-      .slider #myCarousel .carousel-inner .item:nth-child(2) {
-        background-image: url("../images/slide/slide2.jpg"); }
-      .slider #myCarousel .carousel-inner .item:nth-child(3) {
-        background-image: url("../images/slide/slide3.jpg"); }
-      .slider #myCarousel .carousel-inner .item .description {
-        width: 40%;
-        height: auto;
-        display: inline-block;
-        position: relative;
-        color: #fff;
-        padding: 0.5em;
-        background-color: rgba(37, 165, 85, 0.8);
-        top: 15.5em;
-        left: 7%;
-        padding: 1em; }
-        .slider #myCarousel .carousel-inner .item .description h1 {
-          margin: 0;
-          padding: 0.1em 0;
-          font-family: "Ubuntu", sans-serif;
-          font-size: 3.5em;
-          font-weight: 700;
-          margin-bottom: 0.3em; }
-        .slider #myCarousel .carousel-inner .item .description span {
-          font-family: "Ubuntu", sans-serif;
-          font-size: 1.2em;
-          font-weight: 300;
-          text-indent: 1em; }
-    .slider #myCarousel .carousel-control {
-      width: 9%; }
-
 .main-content {
   width: 100%;
   height: auto;
   display: inline-block;
   position: relative; }
-  .main-content .sect {
-    width: 100%;
+  .main-content .sidebar {
+    width: 20%;
     height: auto;
     display: inline-block;
     position: relative;
-    padding: 1%; }
-  .main-content #products-icon {
-    margin-top: 3em;
-    text-align: center; }
-    .main-content #products-icon h1:nth-child(1) {
-      margin-bottom: 0.8em;
+    padding: 1%;
+    float: left; }
+    .main-content .sidebar h1 {
       font-family: "Ubuntu", sans-serif;
-      font-size: 4em;
+      font-size: 2em;
       font-weight: 700;
-      color: #444; }
-    .main-content #products-icon span {
-      color: #444; }
-    .main-content #products-icon a {
-      color: #25a555;
-      font-size: 1em;
-      width: auto;
-      height: auto;
-      display: table;
-      position: relative;
-      margin: 4em auto;
-      border: solid 1px #25a555;
-      padding: 1em 2.5em;
-      -webkit-transition: all 0.2s linear 0s;
-      -moz-transition: all 0.2s linear 0s;
-      -ms-transition: all 0.2s linear 0s;
-      -o-transition: all 0.2s linear 0s;
-      transition: all 0.2s linear 0s; }
-      .main-content #products-icon a:hover {
-        color: #fff;
-        background-color: #25a555; }
-    .main-content #products-icon .items {
-      width: 265px;
+      color: #25a555; }
+    .main-content .sidebar ul li a span {
+      float: right; }
+  .main-content .products-container {
+    width: 69%;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    margin-left: 6%;
+    float: left;
+    background-color: #eee;
+    margin-top: 6em !important;
+    text-align: left; }
+    .main-content .products-container .categories {
+      width: 100%;
       height: auto;
       display: inline-block;
-      position: relative;
-      text-align: center;
-      font-family: "Ubuntu", sans-serif;
-      font-size: 0.9em;
-      font-weight: 300;
-      margin: 1% 2%;
-      vertical-align: top; }
-      .main-content #products-icon .items h1 {
-        padding: 0;
-        margin: 0.5em 0;
-        font-family: "Ubuntu", sans-serif;
-        font-size: 2.1em;
-        font-weight: 700; }
-      .main-content #products-icon .items .icon {
-        width: 120px;
-        height: 120px;
+      position: relative; }
+      .main-content .products-container .categories .items {
+        width: auto;
+        height: auto;
         display: inline-block;
         position: relative;
-        background-size: 120px; }
-      .main-content #products-icon .items:nth-child(2) .icon {
-        background-image: url("../images/icon-wellness.png"); }
-      .main-content #products-icon .items:nth-child(3) .icon {
-        background-image: url("../images/icon-beauty.png"); }
-      .main-content #products-icon .items:nth-child(4) .icon {
-        background-image: url("../images/icon-lopulent.png"); }
-      .main-content #products-icon .items:nth-child(5) .icon {
-        background-image: url("../images/icon-package.png"); }
-  .main-content #intro {
-    width: 100%;
-    height: auto;
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    background-image: url("../images/content2.jpg");
-    background-attachment: fixed;
-    background-size: contain;
-    color: #fff;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 1.3em;
-    font-weight: 300;
-    padding: 2em 3%; }
-    .main-content #intro a {
-      color: #fff;
-      font-size: 1em;
-      width: auto;
-      height: auto;
-      display: table;
-      position: relative;
-      font-family: "Ubuntu", sans-serif;
-      font-size: 0.8em;
-      font-weight: 300;
-      margin: 2em auto;
-      border: solid 1px #fff;
-      padding: 1em 2.5em;
-      -webkit-transition: all 0.2s linear 0s;
-      -moz-transition: all 0.2s linear 0s;
-      -ms-transition: all 0.2s linear 0s;
-      -o-transition: all 0.2s linear 0s;
-      transition: all 0.2s linear 0s; }
-      .main-content #intro a:hover {
-        color: #fff;
-        background-color: #25a555; }
-  .main-content #why {
-    width: 100%;
-    height: auto;
-    display: inline-block;
-    position: relative;
-    text-align: center; }
-    .main-content #why .items {
-      width: 580px;
-      height: auto;
-      display: inline-block;
-      position: relative;
-      text-align: left;
-      vertical-align: top;
-      margin: 0 2%;
-      padding: 2% 0; }
-      .main-content #why .items h1 {
-        padding: 0;
-        font-family: "Ubuntu", sans-serif;
-        font-size: 2em;
-        font-weight: 700;
-        color: #444; }
-    .main-content #why h1 {
-      font-family: "Ubuntu", sans-serif;
-      font-size: 4em;
-      font-weight: 700; }
+        background-color: #ddd;
+        text-align: center;
+        margin: 2% 3%; }
+        .main-content .products-container .categories .items .img {
+          width: 250px;
+          height: 250px;
+          display: inline-block;
+          position: relative;
+          background-color: #aaa; }
+        .main-content .products-container .categories .items h1 {
+          margin: 0;
+          font-family: "Ubuntu", sans-serif;
+          font-size: 1.2em;
+          font-weight: 700; }
+    .main-content .products-container #wellness .items:nth-child(1) .img {
+      background-image: url("../images/slide3.jpg"); }
 
 .footer {
   width: 100%;
@@ -376,4 +253,4 @@ body, .container {
       font-weight: 700;
       color: #fff; }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=products.css.map */

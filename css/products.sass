@@ -121,130 +121,48 @@ body,.container
 		background-size: 163px 65px
 		margin-left: 3%
 
-.slider
-	+default_style(100%,500px)
-	background-color: #ddd
-	#myCarousel
-		+default_style(100%,500px)
-		.carousel-inner
-			.item
-				width: 100%
-				height: 500px
-				background-size: 100%
-				&:nth-child(1)
-					background-image: url('../images/slide/slide1.jpg')
-				&:nth-child(2)
-					background-image: url('../images/slide/slide2.jpg')
-				&:nth-child(3)
-					background-image: url('../images/slide/slide3.jpg')	
-				.description
-					h1
-						margin: 0
-						padding: .1em 0
-						+bold(3.5em)
-						margin-bottom: .3em
-					span
-						+light(1.2em)
-						text-indent: 1em
-					+default_style(40%,auto)
-					color: #fff
-					padding: .5em
-					background-color: rgba(37,165,85,.8)
-					top: 15.5em
-					left: 7%
-					padding: 1em
-					
-		.carousel-control
-			width: 9%			
-				
+
 
 .main-content
 	+default_style(100%,auto)
-	.sect
-		+default_style(100%,auto)
+	.sidebar
+		+default_style(20%,auto)
 		padding: 1%
-	#products-icon
-		margin-top: 3em
-		text-align: center
-		h1:nth-child(1)
-			margin-bottom: .8em
-			+bold(4em)
-			color: $black
-		span
-			color: $black
-		a
-			color: $blue
-			font-size: 1em
-			+default_style(auto,auto,table)
-			margin: 4em auto
-			border: solid 1px $blue
-			padding: 1em 2.5em
-			+animation
-			&:hover
-				color: #fff
-				background-color: $blue
-		.items
-			+default_style(265px,auto,inline-block)
-			text-align: center
-			+light(.9em)
-			margin: 1% 2%
-			vertical-align: top
-			h1
-				padding: 0
-				margin: .5em 0
-				+bold(2.1em)
-			.icon
-				+default_style(120px,120px)
-				background-size: 120px
-			&:nth-child(2)
-				.icon
-					background-image: url('../images/icon-wellness.png')
-			&:nth-child(3)
-				.icon
-					background-image: url('../images/icon-beauty.png')
-			&:nth-child(4)
-				.icon
-					background-image: url('../images/icon-lopulent.png')
-			&:nth-child(5)
-				.icon
-					background-image: url('../images/icon-package.png')
-	#intro
-		+default_style(100%,auto)
-		text-align: center
-		background-image: url('../images/content2.jpg')
-		background-attachment: fixed
-		background-size: contain
-		color: #fff
-		+light(1.3em)
-		padding: 2em 3%
-		a
-			color: #fff
-			font-size: 1em
-			+default_style(auto,auto,table)
-			+light(.8em)
-			margin: 2em auto
-			border: solid 1px #fff
-			padding: 1em 2.5em
-			+animation
-			&:hover
-				color: #fff
-				background-color: $blue
-	#why
-		+default_style(100%,auto)
-		text-align: center
-		.items
-			+default_style(580px,auto,inline-block)
-			text-align: left
-			vertical-align: top
-			margin: 0 2%
-			padding: 2% 0
-			h1
-				padding: 0
-				+bold(2em)
-				color: $black
-
+		float: left
 		h1
-			+bold(4em)
+			+bold(2em)
+			color: $blue
+		ul
+			li
+				a
+					span
+						float: right
+	.products-container
+		+default_style(69%,auto)
+		margin-left: 6%
+		float: left
+		background-color: #eee
+		margin-top: 6em !important
+		text-align: left
+		.categories
+			+default_style(100%,auto)	
+			.items
+				+default_style(auto,auto)
+				background-color: #ddd
+				text-align: center
+				margin: 2% 3%
+				.img
+					+default_style(250px,250px)
+					background-color: #aaa
+				h1
+					margin: 0
+					+bold(1.2em)
+		#wellness
+			.items
+				&:nth-child(1)
+					.img
+						background-image: url('../images/slide3.jpg')
+	
 
 		
 .footer

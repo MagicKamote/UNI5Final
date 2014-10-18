@@ -3,21 +3,68 @@
   height: auto;
   display: inline-block;
   position: relative;
-  margin-top: 5em; }
-  .main-content .form-group {
-    width: 100%;
-    height: auto;
+  margin-top: 5em;
+  text-align: center; }
+  .main-content a {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    padding: 0.7em 3em;
+    border: solid 1px #25a555;
+    color: #25a555;
+    -webkit-transition: all 0.2s linear 0s;
+    -moz-transition: all 0.2s linear 0s;
+    -ms-transition: all 0.2s linear 0s;
+    -o-transition: all 0.2s linear 0s;
+    transition: all 0.2s linear 0s;
+    margin: 3em auto;
+    display: table; }
+    .main-content a:hover {
+      background-color: #25a555;
+      color: #fff; }
+  .main-content .h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+    padding: 0; }
+  .main-content .span {
+    width: 80%;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1em;
+    font-weight: 300;
     display: inline-block;
+    margin-bottom: 3em; }
+  .main-content .content {
+    width: 75em;
+    height: auto;
+    display: inline-block !important;
     position: relative; }
-    .main-content .form-group label {
-      width: 15%;
-      display: inline-block !important;
-      vertical-align: top; }
-    .main-content .form-group input {
-      width: 20%;
-      display: inline-block !important; }
-    .main-content .form-group textarea {
-      width: 60.6%;
-      display: inline-block !important; }
+    .main-content .content .form-group {
+      width: auto;
+      height: auto;
+      display: inline-block;
+      position: relative; }
+      .main-content .content .form-group label {
+        width: 12em;
+        display: inline-block !important;
+        vertical-align: top;
+        text-align: left;
+        padding: 0 1em;
+        line-height: 2.5em; }
+      .main-content .content .form-group input {
+        width: 20em;
+        display: inline-block !important;
+        text-align: left; }
+      .main-content .content .form-group textarea {
+        width: 60.6em;
+        display: inline-block !important;
+        text-align: left; }
+      .main-content .content .form-group select {
+        width: 20em;
+        display: inline-block !important; }
+      .main-content .content .form-group:nth-child(4) label:nth-child(1) {
+        margin-left: -8em; }
+      .main-content .content .form-group:nth-child(5) label:nth-child(1) {
+        margin-left: -8em; }
 
 /*# sourceMappingURL=career.css.map */
