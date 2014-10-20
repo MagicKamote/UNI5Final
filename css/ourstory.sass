@@ -1,0 +1,66 @@
+$blue: #25a555
+$black: #555
+
+=default_style($width,$height,$display: inline-block,$position: relative)
+	width: $width
+	height: $height
+	display: $display
+	position: $position
+
+=light($size: 1em)
+	font-family: 'Ubuntu', sans-serif
+	font-size: $size
+	font-weight: 300
+
+=regular($size: 1em)
+	font-family: 'Ubuntu', sans-serif
+	font-size: $size
+	font-weight: 400
+
+=bold($size: 1em)
+	font-family: 'Ubuntu', sans-serif
+	font-size: $size
+	font-weight: 700	
+
+=animation
+	-webkit-transition: all .2s linear 0s
+	-moz-transition: all .2s linear 0s
+	-ms-transition: all .2s linear 0s
+	-o-transition: all .2s linear 0s
+	transition: all .2s linear 0s
+
+
+body,.container
+	+default_style(100%,auto)
+	margin: 0
+	padding: 0
+
+.main-content
+	+default_style(100%,auto)
+	.ourstory
+		+default_style(100%,auto)
+		//background-color: $black
+		text-align: center
+		h1
+			+bold(3em)
+			color: $blue
+		span
+			width: 85%
+			display: inline-block
+			+light(1.5em)
+	.chairman
+		+default_style(100%,auto)
+		//background-color: $black
+		text-align: center
+		h1
+			+bold(3em)
+			color: $blue
+		span
+			width: 85%
+			display: inline-block
+			+light(1.5em)
+		img
+			+default_style(300,300,inline-block)
+			border-radius: 100em
+			background-color: $blue
+			margin-bottom: 3em

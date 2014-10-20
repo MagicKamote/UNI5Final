@@ -1,0 +1,57 @@
+body, .container {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 0; }
+
+.main-content {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  position: relative; }
+  .main-content .ourstory {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    text-align: center; }
+    .main-content .ourstory h1 {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 3em;
+      font-weight: 700;
+      color: #25a555; }
+    .main-content .ourstory span {
+      width: 85%;
+      display: inline-block;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 1.5em;
+      font-weight: 300; }
+  .main-content .chairman {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    text-align: center; }
+    .main-content .chairman h1 {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 3em;
+      font-weight: 700;
+      color: #25a555; }
+    .main-content .chairman span {
+      width: 85%;
+      display: inline-block;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 1.5em;
+      font-weight: 300; }
+    .main-content .chairman img {
+      width: 300;
+      height: 300;
+      display: inline-block;
+      position: relative;
+      border-radius: 100em;
+      background-color: #25a555;
+      margin-bottom: 3em; }
+
+/*# sourceMappingURL=ourstory.css.map */
