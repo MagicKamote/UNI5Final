@@ -77,7 +77,7 @@
 				    	<label for="inputEmail">PHONE</label>
 				        <input class="form-control" id="inputEmail" placeholder="Phone" type="text" name="phone">
 					    <label>GENDER</label>
-					    <select class="form-control">
+					    <select class="form-control" name="gender">
 					    	<option>Select Gender...</option>
 					    	<option>Male</option>
 					    	<option>Female</option>
