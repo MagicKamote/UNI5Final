@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<meta name="description" content="A Company of Filipino Young Entrepreneurs that engaged in the Direct Selling of Royale Food Supplements, powdered beverages, Beauty, Skin, & personal care products through a unique distribution method providing income opportunity to all Filipino’s.">
 	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+	<link rel="icon" type="image/png" href="favicon.png" />
 	<link rel="stylesheet" type="text/css" href="css/Reset.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/products.css">
@@ -18,6 +19,43 @@
 		$(".nav.nav-pills.nav-stacked li").on("click",function(){
 			  $(".nav.nav-pills li").removeClass("active");
 			  $(this).addClass("active");
+			  var current = $(this).index()
+			  if (current == 0)
+			  {
+			  	$('#beauty').show(150)
+			  	$('#lopulent').show(150)
+			  	$('#wellness').show(150)
+			  	$('#package').show(150)
+			  }
+			  else if (current == 1)
+			  {
+			  	$('#beauty').hide(150)
+			  	$('#lopulent').hide(150)
+			  	$('#wellness').show(150)
+			  	$('#package').hide(150)
+			  }
+			  else if (current == 2)
+			  {
+			  	$('#beauty').show(150)
+			  	$('#lopulent').hide(150)
+			  	$('#wellness').hide(150)
+			  	$('#package').hide(150)
+			  }
+			  else if (current == 3)
+			  {
+			  	$('#beauty').hide(150)
+			  	$('#lopulent').show(150)
+			  	$('#wellness').hide(150)
+			  	$('#package').hide(150)
+			  }
+			  else if (current == 4)
+			  {
+			  	$('#beauty').hide(150)
+			  	$('#lopulent').hide(150)
+			  	$('#wellness').hide(150)
+			  	$('#package').show(150)
+			  }
+
 			});
       	$(document).scroll(function(){
       		// alert($(this).scrollTop())
@@ -60,11 +98,11 @@
 			<div class="sidebar">
 				<h1>Products</h1>
 				<ul class="nav nav-pills nav-stacked">
-				  <li class="active"><a href="#">All Products<span class="badge">42</span></a></a></li>
-				  <li class=""><a href="#">Wellness<span class="badge">12</span></a></a></li>
-				  <li class=""><a href="#">Beauty<span class="badge">9</span></a></a></li>
-				  <li class=""><a href="#">L'opulent<span class="badge">11</span></a></a></li>
-				  <li class=""><a href="#">Packages<span class="badge">8</span></a></a></li>
+				  <li class="active"><a  href="#" >All Products<span class="badge">39</span></a></a></li>
+				  <li class=""><a  href="#">Wellness<span class="badge">9</span></a></a></li>
+				  <li class=""><a  href="#">Beauty<span class="badge">5</span></a></a></li>
+				  <li class=""><a  href="#">L'opulent<span class="badge">10</span></a></a></li>
+				  <li class=""><a  href="#">Packages<span class="badge">15</span></a></a></li>
 				</ul>
 			</div>
 			<div class='products-container'>
@@ -72,45 +110,195 @@
 					<div class="items">
 						<div class="img">
 						</div>
-						<h1>Item name</h1>
+						<h1>Diabet Watch</h1>
 					</div>
 					<div class="items">
 						<div class="img">
 						</div>
-						<h1>Item name</h1>
+						<h1>Fiber Rich</h1>
 					</div>
 					<div class="items">
 						<div class="img">
 						</div>
-						<h1>Item name</h1>
+						<h1>Fit Shape</h1>
 					</div>
 					<div class="items">
 						<div class="img">
 						</div>
-						<h1>Item name</h1>
+						<h1>Grape Seed</h1>
 					</div>
 					<div class="items">
 						<div class="img">
 						</div>
-						<h1>Item name</h1>
+						<h1>L-Gluta 700</h1>
 					</div>
 					<div class="items">
 						<div class="img">
 						</div>
-						<h1>Item name</h1>
+						<h1>L-Gluta Powder</h1>
 					</div>
 					<div class="items">
 						<div class="img">
 						</div>
-						<h1>Item name</h1>
+						<h1>Pinkish Glow</h1>
 					</div>
 					<div class="items">
 						<div class="img">
 						</div>
-						<h1>Item name</h1>
+						<h1>Riqall</h1>
+					</div>
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Royale C</h1>
+					</div>
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Choco All</h1>
+					</div>
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Coffee Blend Lite</h1>
+					</div>
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Coffee Blend Regular</h1>
+					</div>
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Roasted Corn Blend</h1>
+					</div>
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Richarge</h1>
 					</div>
 				</div>
-				
+				<div id='beauty' class="categories"> 
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Gluta Lightening Lotion</h1>
+					</div>				
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Gluta Power Anti-Aging Soap</h1>
+					</div>
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Gluta Whitening Cream</h1>
+					</div>				
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Kojic Papaya Soap</h1>
+					</div>
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>L-Gluta Powerline Corrector Cream</h1>
+					</div>				
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>L-Gluta Power Soap</h1>
+					</div>
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Pinkish Glow Brightening</h1>
+					</div>				
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Pinkish Glow Toner</h1>
+					</div>
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Royale Beauty Lipstick</h1>
+					</div>					
+				</div>
+				<div id='lopulent' class="categories"> 
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Glutadeo</h1>
+					</div>				
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Jeune</h1>
+					</div>
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Lumiere</h1>
+					</div>				
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Meilleur</h1>
+					</div>
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Rejuv</h1>
+					</div>							
+				</div>
+				<div id='package' class="categories"> 
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Premium Hyper Plan Package A</h1>
+					</div>				
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Premium Hyper Plan Package B</h1>
+					</div>
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Premium Hyper Plan Package C</h1>
+					</div>				
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Premium Hyper Plan Package D</h1>
+					</div>
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Premium Hyper Plan Package E</h1>
+					</div>	
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Premium Package A</h1>
+					</div>	
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Premium Package B</h1>
+					</div>
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Premium Package D</h1>
+					</div>
+					<div class="items">
+						<div class="img">
+						</div>
+						<h1>Premium Package E</h1>
+					</div>						
+				</div>
 			</div>
 		</div>
 		<div class="footer">
@@ -136,17 +324,17 @@
 				<ul>
 					<li><h1>Terms & Condition</h1></li>
 					<li><hr></li>
-					<li><a href="#">Privacy Policy</a></li>
-					<li><a href="#">Terms of Use</a></li>
-					<li><a href="#">Legal Notice</a></li>
-					<li><a href="#">Distributor Policy</a></li>
-					<li><a href="#"> Code of Ethics</a></li>
-					<li><a href="#">Product Policy </a></li>
+					<li><a href="policy.html">Privacy Policy</a></li>
+					<li><a href="policy.html">Terms of Use</a></li>
+					<li><a href="policy.html">Legal Notice</a></li>
+					<li><a href="policy.html">Distributor Policy</a></li>
+					<li><a href="policy.html"> Code of Ethics</a></li>
+					<li><a href="policy.html">Product Policy </a></li>
 				</ul>
 				<ul>
 					<li><h1>FIND US</h1></li>
 					<li><hr></li>
-					<li><a href="#"	id="smi1" class="social-media-icon"><span>Facebook</span></a></li>
+					<li><a href="https://www.facebook.com/uni5wellness"	id="smi1" class="social-media-icon" target="_blank"><span>Facebook</span></a></li>
 					<li><a href="#" id="smi2" class="social-media-icon"><span>Twitter</span></a></li>
 					<li><a href="#" id="smi3" class="social-media-icon"><span>Google+</span></a></li>
 				</ul>

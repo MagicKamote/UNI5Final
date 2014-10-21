@@ -1,125 +1,4 @@
-$wew: #fff
-$blue: #25a555
-$black: #444
-$maxwidth: 990px
-
-=default_style($width,$height,$display: inline-block,$position: relative)
-	width: $width
-	height: $height
-	display: $display
-	position: $position
-
-=light($size: 1em)
-	font-family: 'Ubuntu', sans-serif
-	font-size: $size
-	font-weight: 300
-
-=regular($size: 1em)
-	font-family: 'Ubuntu', sans-serif
-	font-size: $size
-	font-weight: 400
-
-=bold($size: 1em)
-	font-family: 'Ubuntu', sans-serif
-	font-size: $size
-	font-weight: 700	
-
-=animation
-	-webkit-transition: all .2s linear 0s
-	-moz-transition: all .2s linear 0s
-	-ms-transition: all .2s linear 0s
-	-o-transition: all .2s linear 0s
-	transition: all .2s linear 0s
-
-
-body,.container
-	+default_style(100%,auto)
-	margin: 0
-	padding: 0
-	overflow-x: hidden
-.container
-	overflow-y: hidden
-.loader
-	+default_style(100%,1vh)
-	text-align: center
-	margin-top: 34vh	
-	img
-		display: inline-block
-	h1
-		+light(1em)
-
-.header 
-	+default_style(100%,81px)
-	border-bottom: solid 2px $blue
-	.menu
-		+default_style(auto,auto,inline-block)
-		background-color: #ddd
-		z-index: 10
-		float: right
-	#menuicon-container
-		+default_style(auto,auto)
-		padding: 1em
-		float: right
-		margin-top: 1em
-		padding: 1em
-		margin-right: 2%
-		cursor: pointer
-		+animation
-		border: solid 1px transparent
-		&:hover
-			border: solid 1px $blue
-		&:hover #menuicon
-			background-image: url('../images/menu1.png')
-		#menuicon
-			+default_style(1.5em,1.5em)			
-			background-image: url('../images/menu.png')
-			background-size: 1.5em
-			background-repeat: no-repeat
-			+animation
-
-	ul
-		+default_style(55.28em,auto)
-		float: right	
-		margin: 0
-		li
-			float: left
-			+light(.9em)			
-			margin: 0			
-			@media screen and (max-width: $maxwidth)
-				+light(.9em)
-			a
-				padding: 2.4em 2.3em 				
-				display: block
-				color: $black
-				+animation
-				border: solid 1px transparent
-				&:hover	
-					// color: #fff
-					// background-color: $blue	
-					color: #fff
-					border: solid 1px $blue
-					background-color: $blue
-					text-decoration: none
-			&:nth-child(4)
-				height: 28px !important
-		li#searchBarMargin
-			margin-top: 1.85em
-			margin-left: 15px
-			height: 28px
-			+light()
-			form
-				.input-group
-					width: 14em	
-					.form-control.search
-						width: 100%
-						height: 28px
-	#logo
-		+default_style(163px,65px)
-		margin: .5em 0
-		float: left
-		background-image: url('../images/logo.png')
-		background-size: 163px 65px
-		margin-left: 3%
+@import 'defaultsheet.sass'
 
 .slider
 	+default_style(100%,500px)
@@ -229,6 +108,8 @@ body,.container
 			&:hover
 				color: #fff
 				background-color: $blue
+		h1
+			+bold(3em)
 	#why
 		+default_style(100%,auto)
 		text-align: center
@@ -240,64 +121,22 @@ body,.container
 			padding: 2% 0
 			h1
 				padding: 0
+				margin: 0 0 .5em 0
 				+bold(2em)
 				color: $black
-
+				span
+					font-size: 1em
+					margin: 0
+					padding: 0
+					top: .15em
+					display: inline-block
+					width: auto
+			span
+				width: 80%
+				display: block
 		h1
 			+bold(4em)
 
-		
-.footer
-	+default_style(100%,auto)
-	padding: 0
-	background-color: $blue
-	color: #fff !important
-	.items
-		+default_style(auto,auto,table)
-		// background-color: #ddd
-		margin: 1% auto
-		// margin: 0 auto
-		ul
-			+default_style(auto,auto,table)	
-			float: left
-			margin: 0 3em
-			li
-				+light(1em)
-				hr
-					width: 3%
-					margin: 0
-				a
-					color: #fff
-					+light(1em)
-				h1
-					+bold(1em)
-				.social-media-icon
-					width: 35px
-					height: 35px
-					background-size: 35px
-					display: block
-					background-color: #ddd
-					margin: .3em 0
-						
-					span
-						display: block
-						margin-left: 40px
-						position: relative
-						top: 7px
-				#smi1
-					background-image: url('../images/fb.jpg')
-				#smi2
-					background-image: url('../images/tw.jpg')
-				#smi3
-					background-image: url('../images/gp.jpg')
-	.bottom-footer
-		margin-top: 1em
-		text-align: center
-		+light(1em)
-		a
-			+bold(1em)
-			color: #fff
-			// color: #f68f4a
 
 	
 					
@@ -308,8 +147,6 @@ body,.container
 
 
 
-
-						
 
 
 

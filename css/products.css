@@ -1,3 +1,4 @@
+@import url(reset.css);
 body, .container {
   width: 100%;
   height: auto;
@@ -9,20 +10,6 @@ body, .container {
 
 .container {
   overflow-y: hidden; }
-
-.loader {
-  width: 100%;
-  height: 1vh;
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  margin-top: 34vh; }
-  .loader img {
-    display: inline-block; }
-  .loader h1 {
-    font-family: "Ubuntu", sans-serif;
-    font-size: 1em;
-    font-weight: 300; }
 
 .header {
   width: 100%;
@@ -73,11 +60,12 @@ body, .container {
       -o-transition: all 0.2s linear 0s;
       transition: all 0.2s linear 0s; }
   .header ul {
-    width: 55.28em;
+    width: auto;
     height: auto;
     display: inline-block;
     position: relative;
     float: right;
+    right: 2%;
     margin: 0; }
     .header ul li {
       float: left;
@@ -91,7 +79,7 @@ body, .container {
           font-size: 0.9em;
           font-weight: 300; } }
       .header ul li a {
-        padding: 2.4em 2.3em;
+        padding: 2.6em 2.3em;
         display: block;
         color: #444;
         -webkit-transition: all 0.2s linear 0s;
@@ -130,62 +118,6 @@ body, .container {
     background-size: 163px 65px;
     margin-left: 3%; }
 
-.main-content {
-  width: 100%;
-  height: auto;
-  display: inline-block;
-  position: relative; }
-  .main-content .sidebar {
-    width: 20%;
-    height: auto;
-    display: inline-block;
-    position: relative;
-    padding: 1%;
-    float: left; }
-    .main-content .sidebar h1 {
-      font-family: "Ubuntu", sans-serif;
-      font-size: 2em;
-      font-weight: 700;
-      color: #25a555; }
-    .main-content .sidebar ul li a span {
-      float: right; }
-  .main-content .products-container {
-    width: 69%;
-    height: auto;
-    display: inline-block;
-    position: relative;
-    margin-left: 6%;
-    float: left;
-    background-color: #eee;
-    margin-top: 6em !important;
-    text-align: left; }
-    .main-content .products-container .categories {
-      width: 100%;
-      height: auto;
-      display: inline-block;
-      position: relative; }
-      .main-content .products-container .categories .items {
-        width: auto;
-        height: auto;
-        display: inline-block;
-        position: relative;
-        background-color: #ddd;
-        text-align: center;
-        margin: 2% 3%; }
-        .main-content .products-container .categories .items .img {
-          width: 250px;
-          height: 250px;
-          display: inline-block;
-          position: relative;
-          background-color: #aaa; }
-        .main-content .products-container .categories .items h1 {
-          margin: 0;
-          font-family: "Ubuntu", sans-serif;
-          font-size: 1.2em;
-          font-weight: 700; }
-    .main-content .products-container #wellness .items:nth-child(1) .img {
-      background-image: url("../images/slide3.jpg"); }
-
 .footer {
   width: 100%;
   height: auto;
@@ -206,23 +138,26 @@ body, .container {
       display: table;
       position: relative;
       float: left;
-      margin: 0 3em; }
+      margin: 0.2em 3em; }
       .footer .items ul li {
         font-family: "Ubuntu", sans-serif;
         font-size: 1em;
         font-weight: 300; }
         .footer .items ul li hr {
-          width: 3%;
-          margin: 0; }
+          width: 100%;
+          margin: 0.5em 0; }
         .footer .items ul li a {
           color: #fff;
           font-family: "Ubuntu", sans-serif;
           font-size: 1em;
           font-weight: 300; }
+          .footer .items ul li a:hover {
+            text-decoration: none; }
         .footer .items ul li h1 {
           font-family: "Ubuntu", sans-serif;
           font-size: 1em;
-          font-weight: 700; }
+          font-weight: 700;
+          margin: 0; }
         .footer .items ul li .social-media-icon {
           width: 35px;
           height: 35px;
@@ -252,5 +187,144 @@ body, .container {
       font-size: 1em;
       font-weight: 700;
       color: #fff; }
+
+.main-content {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  position: relative; }
+  .main-content .sidebar {
+    width: 20%;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    padding: 1%;
+    float: left; }
+    .main-content .sidebar h1 {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 2em;
+      font-weight: 700;
+      color: #25a555; }
+    .main-content .sidebar ul li a span {
+      float: right; }
+  .main-content .products-container {
+    width: 69%;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    margin-left: 6%;
+    float: left;
+    margin-top: 6em !important;
+    text-align: left; }
+    .main-content .products-container .categories {
+      width: 100%;
+      height: auto;
+      display: inline-block;
+      position: relative; }
+      .main-content .products-container .categories .items {
+        width: 250px;
+        height: auto;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        margin: 2% 3%;
+        vertical-align: top; }
+        .main-content .products-container .categories .items .img {
+          width: 250px;
+          height: 250px;
+          display: inline-block;
+          position: relative;
+          border: solid 1px #bbb;
+          background-size: 200px;
+          background-repeat: no-repeat;
+          background-position: 30px; }
+        .main-content .products-container .categories .items h1 {
+          margin: 0 auto;
+          font-family: "Ubuntu", sans-serif;
+          font-size: 1.2em;
+          font-weight: 700;
+          width: 90%; }
+    .main-content .products-container #wellness .items:nth-child(1) .img {
+      background-image: url("../images/royale/wellness/diabetwatch.png"); }
+    .main-content .products-container #wellness .items:nth-child(2) .img {
+      background-image: url("../images/royale/wellness/fiberich.png"); }
+    .main-content .products-container #wellness .items:nth-child(3) .img {
+      background-image: url("../images/royale/wellness/fitshape.png"); }
+    .main-content .products-container #wellness .items:nth-child(4) .img {
+      background-image: url("../images/royale/wellness/grapeseed.png"); }
+    .main-content .products-container #wellness .items:nth-child(5) .img {
+      background-image: url("../images/royale/wellness/L-Gluta700.png"); }
+    .main-content .products-container #wellness .items:nth-child(6) .img {
+      background-image: url("../images/royale/wellness/L-GlutaPower.png"); }
+    .main-content .products-container #wellness .items:nth-child(7) .img {
+      background-image: url("../images/royale/wellness/pinkishglow.png"); }
+    .main-content .products-container #wellness .items:nth-child(8) .img {
+      background-image: url("../images/royale/wellness/riqall.png"); }
+    .main-content .products-container #wellness .items:nth-child(9) .img {
+      background-image: url("../images/royale/wellness/royale-c.png"); }
+    .main-content .products-container #wellness .items:nth-child(10) .img {
+      background-image: url("../images/royale/wellness/chocoall.png"); }
+    .main-content .products-container #wellness .items:nth-child(11) .img {
+      background-image: url("../images/royale/wellness/coffee_lite.png"); }
+    .main-content .products-container #wellness .items:nth-child(12) .img {
+      background-image: url("../images/royale/wellness/coffee_reg.png"); }
+    .main-content .products-container #wellness .items:nth-child(13) .img {
+      background-image: url("../images/royale/wellness/royalblendroastedcorn.png"); }
+    .main-content .products-container #wellness .items:nth-child(14) .img {
+      background-image: url("../images/royale/wellness/richarge.png"); }
+    .main-content .products-container #beauty .items:nth-child(1) .img {
+      background-image: url("../images/royale/beauty/glutaLIGHTENINGlotion.png"); }
+    .main-content .products-container #beauty .items:nth-child(2) .img {
+      background-image: url("../images/royale/beauty/glutaPOWERantiAGEINGsoap.png"); }
+    .main-content .products-container #beauty .items:nth-child(3) .img {
+      background-image: url("../images/royale/beauty/glutaWHITENINGcream.png"); }
+    .main-content .products-container #beauty .items:nth-child(4) .img {
+      background-image: url("../images/royale/beauty/kojicpapayasoap.png"); }
+    .main-content .products-container #beauty .items:nth-child(5) .img {
+      background-image: url("../images/royale/beauty/L-Glutapowerlinecorrectorcream.png"); }
+    .main-content .products-container #beauty .items:nth-child(6) .img {
+      background-image: url("../images/royale/beauty/L-Glutapowersoap.png"); }
+    .main-content .products-container #beauty .items:nth-child(7) .img {
+      background-image: url("../images/royale/beauty/pinkishglowbrightening.png"); }
+    .main-content .products-container #beauty .items:nth-child(8) .img {
+      background-image: url("../images/royale/beauty/pinkishglowtoner.png"); }
+    .main-content .products-container #beauty .items:nth-child(9) .img {
+      background-image: url("../images/royale/beauty/royalebeautylipstick.png"); }
+    .main-content .products-container #lopulent .items:nth-child(1) .img {
+      background-image: url("../images/royale/lopulent/glutadeo.png"); }
+    .main-content .products-container #lopulent .items:nth-child(2) .img {
+      background-image: url("../images/royale/lopulent/jeune.png");
+      background-size: 88px 228px;
+      background-position: 80px 10px; }
+    .main-content .products-container #lopulent .items:nth-child(3) .img {
+      background-image: url("../images/royale/lopulent/lumiere.png");
+      background-size: 88px 228px;
+      background-position: 80px 10px; }
+    .main-content .products-container #lopulent .items:nth-child(4) .img {
+      background-image: url("../images/royale/lopulent/meilleur.png");
+      background-size: 88px 228px;
+      background-position: 80px 10px; }
+    .main-content .products-container #lopulent .items:nth-child(5) .img {
+      background-image: url("../images/royale/lopulent/rejuv.png");
+      background-size: 88px 228px;
+      background-position: 80px 10px; }
+    .main-content .products-container #package .items:nth-child(1) .img {
+      background-image: url("../images/royale/package/option1.png"); }
+    .main-content .products-container #package .items:nth-child(2) .img {
+      background-image: url("../images/royale/package/option2.png"); }
+    .main-content .products-container #package .items:nth-child(3) .img {
+      background-image: url("../images/royale/package/option3.png"); }
+    .main-content .products-container #package .items:nth-child(4) .img {
+      background-image: url("../images/royale/package/option4.png"); }
+    .main-content .products-container #package .items:nth-child(5) .img {
+      background-image: url("../images/royale/package/option5.png"); }
+    .main-content .products-container #package .items:nth-child(6) .img {
+      background-image: url("../images/royale/package/optiona.jpg"); }
+    .main-content .products-container #package .items:nth-child(7) .img {
+      background-image: url("../images/royale/package/optionb.jpg"); }
+    .main-content .products-container #package .items:nth-child(8) .img {
+      background-image: url("../images/royale/package/optiond.jpg"); }
+    .main-content .products-container #package .items:nth-child(9) .img {
+      background-image: url("../images/royale/package/optione.jpg"); }
 
 /*# sourceMappingURL=products.css.map */
