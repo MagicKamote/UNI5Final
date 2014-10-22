@@ -83,11 +83,13 @@
 					    	<option>Female</option>
 					    </select>
 				    </div>
-			    </div>
+			    </form>
 			    <br>
 			    <!-- <a href="JavaScript: void(0);">Submit</a> -->
-			    <input id="submit" type="submit" name="submit" value="Submit">
-			</form>
+			    <!-- <input id="submit" type="submit" name="submit" value="Submit"> -->
+			</div>
+			<!-- <a href="mail.php" name="submit">Submit</a> -->
+			<input id="submit" type="submit" name="submit" value="Submit">
 		</div>
 
 		<div class="footer">
