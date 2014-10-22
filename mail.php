@@ -15,6 +15,7 @@ $address = ($_POST['address']);
 $zipcode = ($_POST['zipcode']);
 $phone = ($_POST['phone']);
 $email = ($_POST['email']);
+$gender = ($_POST['gender']);
 
 $body = <<<EOD
 Name: $name <br>
@@ -22,7 +23,8 @@ Spouse Name: $s_name <br>
 Address: $address <br>
 Zipcode: $zipcode <br>
 Email: $email <br>
-Phone: $phone
+Phone: $phone <br>
+Gender: $gender
 EOD;
 
 // echo "Fullname: " . $name;

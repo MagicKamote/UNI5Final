@@ -77,17 +77,23 @@
 				    	<label for="inputEmail">PHONE</label>
 				        <input class="form-control" id="inputEmail" placeholder="Phone" type="text" name="phone">
 					    <label>GENDER</label>
+<<<<<<< HEAD
 					    <select name='gender' class="form-control">
+=======
+					    <select class="form-control" name="gender">
+>>>>>>> c7bd631a6edb14b6dd9654ec25bebd34f47ef6ca
 					    	<option>Select Gender...</option>
 					    	<option>Male</option>
 					    	<option>Female</option>
 					    </select>
 				    </div>
-			    </div>
+			    </form>
 			    <br>
 			    <!-- <a href="JavaScript: void(0);">Submit</a> -->
-			    <input id="submit" type="submit" name="submit" value="Submit">
-			</form>
+			    <!-- <input id="submit" type="submit" name="submit" value="Submit"> -->
+			</div>
+			<!-- <a href="mail.php" name="submit">Submit</a> -->
+			<input id="submit" type="submit" name="submit" value="Submit">
 		</div>
 
 		<div class="footer">
