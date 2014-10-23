@@ -56,7 +56,7 @@
 			  	$('#package').show(150)
 			  }
 			});
-		$('.view.btn.btn-default').on('click', function(event) {
+		$('.main-content .products-container .categories .items .btn.btn-default').on('click', function(event) {
 			  	event.preventDefault();
 			  	$('#fullDetails .modal-dialog .modal-content .modal-body .imageInsideModal').remove()
 			  	$('#fullDetails .modal-dialog .modal-content .modal-body .description .nameAndProduct h1').empty()
@@ -73,7 +73,7 @@
 				// alert(parentID)
 
 
-				if(parentID == 'diabetWatch')
+				if(parentID == 'diabetwatch')
 				{
 					var descriptionToAppend = "Diabetwatch vs. Diabetes Diabetes is a condition, wherein blood glucose levels are above normal. Most of the food we eat is converted into glucose, or sugar, which our bodies use for energy. The pancreas, an organ that lies near the stomach, produces a hormone called insulin to help glucose get into the cells of our bodies. <br><br> When a person has diabetes, the body either does not manufacture enough insulin, or cannot use its own insulin as it should. This condition causes sugar to build up in the blood. This disease can create negative health complications, which include heart disease, blindness, kidney failure, and lower-extremity amputations. Diabetes is considered as the sixth leading cause of death in the United States. And according to Francisco Pasaporte, President of the Philippine Association of Diabetes Educators, 500 Filipinos are being diagnosed with diabetes everyday (as of June 2008). <br><br> Signs And Symptoms Of Diabetes<br><br> Individuals who think they might have diabetes must first consult with a physician for proper diagnosis. Some of the common symptoms of diabetes are frequent urination, excessive thirst, unexplained weight loss, sudden vision changes, extreme hunger, numbness or tingling in the hands or feet, very dry skin and sores that are slow to heal."					
 					var name = "Diabet Watch"
@@ -83,7 +83,7 @@
 					$('#fullDetails .modal-dialog .modal-content .modal-body .description .nameAndProduct .productName').append(name)	
 					$('#fullDetails .modal-dialog .modal-content .modal-body .description .nameAndProduct .price').append(price)	
 				}
-				else if (parentID == 'fiberRich')
+				else if (parentID == 'fiberich')
 				{
 					var descriptionToAppend = "100% psyllium seed husk that comes from the crushed seed of the plantago ovata plant. Psyllium is a natural fiber grain, not related to wheat, that yields 60-70 percent solubility. <br><br> • PROMOTES A HEALTHY DIGESTIVE SYSTEM. Helps eliminate constipation and regulates bowel movement.<br><br> • HELPS LOWER CHOLESTEROL LEVEL. Binds with cholesterol secreted in bile acids and excretes it before it is absorbed in the bloodstream.<br><br> • HELPS YOU STAY FIT. Adds volume to your meals without adding calories and staves off hunger to keep you feel full longer. •AIDS IN BLOOD SUGAR MANAGEMENT. Slows down digestion to allow gradual release of glucose.<br><br> •HELPS PREVENT DISEASES. Acts like an internal broom which cleans the walls of digestive tracts, helps remove toxins from digestive system and colon, and keeps an optimal PH in intestines to prevent microbes from producing cancer substances.<br><br>"					
 					var name = "Fiber Rich"
@@ -135,8 +135,7 @@
 			</ul>			
 		</div>
 		<div class="main-content">
-			<div class="sidebar">
-				
+			<div class="sidebar">				
 				<h1 id="category">Products</h1>
 				<ul class="nav nav-pills nav-stacked">
 				  <li class="active"><a  href="#" >All Products<span class="badge">37</span></a></a></li>
@@ -148,11 +147,7 @@
 			</div>
 			<div class='products-container'>
 				<div id='wellness' class="categories"> 
-<<<<<<< HEAD
-					<div class="items" id="diabetWatch">
-=======
 					<div class="items" id="diabetwatch">
->>>>>>> 76f914fb4b9fdec4318a440d2580764332bc9486
 						<div class="img">
 						</div>
 						<h1>Diabetwatch</h1>
@@ -174,23 +169,12 @@
 						<!-- END COPY HERE -->
 
 					</div>
-<<<<<<< HEAD
-					<div class="items" id="fiberRich">
-						<div class="img" >
-						</div>
-						<h1>Fiber Rich</h1>
-						<!-- REMOVE THE FIRST SPAN (PRICE) UNDER H1 -->
-						<!-- COPY STARTING FROM HERE  -->
-						<span> <!-- GET THIS DESCRIPTION FROM SITE -->
-							100% psyllium seed husk that comes from the crushed seed of the plantago ovata plant.syllium is a natural fiber grain, not related to wheat.
-=======
 					<div class="items" id="fiberich">
 						<div class="img">
 						</div>
 						<h1>Fiberich</h1>
 						<span> <!-- GET THIS DESCRIPTION FROM SITE -->
 							FIBERICH is a 100% psyllium seed husk that comes from the crushed seed of the plantago ovata plant.
->>>>>>> 76f914fb4b9fdec4318a440d2580764332bc9486
 						</span>
 						<span class="price">P605.00</span> <!-- GET THIS FROM THE PRICE LIST -->
 						<div class="ratings">
@@ -201,32 +185,17 @@
 							 <span class="glyphicon glyphicon-star-empty"></span>
 						</div>
 						<button type="button" class="btn btn-primary">Buy Now</button>
-<<<<<<< HEAD
 						<button type="button" class="view btn btn-default">View Details</button>
 						<!-- END COPY HERE -->
-
-=======
-						<button type="button" class="btn btn-default">View Details</button>
->>>>>>> 76f914fb4b9fdec4318a440d2580764332bc9486
 					</div>
 					<div class="items" id="fitshape">
 						<div class="img">
 						</div>
-<<<<<<< HEAD
-						<h1>Fit Shape</h1>
-						<!-- REMOVE THE FIRST SPAN (PRICE) UNDER H1 -->
-						<!-- COPY STARTING FROM HERE  -->
-						<span> <!-- GET THIS DESCRIPTION FROM SITE -->
-							100% psyllium seed husk that comes from the crushed seed of the plantago ovata plant.syllium is a natural fiber grain, not related to wheat.
-						</span>
-						<span class="price">P605.00</span> <!-- GET THIS FROM THE PRICE LIST -->
-=======
 						<h1>FitShape</h1>
 						<span> <!-- GET THIS DESCRIPTION FROM SITE -->
 							L-CARNITINE is a nonessential amino acid produced in the liver, brain and kidneys and stored in the muscles, heart, and other tissues.
 						</span>
 						<span class="price">P960.00</span> <!-- GET THIS FROM THE PRICE LIST -->
->>>>>>> 76f914fb4b9fdec4318a440d2580764332bc9486
 						<div class="ratings">
 							<span class="glyphicon glyphicon-star"></span>
 							<span class="glyphicon glyphicon-star"></span>
@@ -235,11 +204,7 @@
 							 <span class="glyphicon glyphicon-star-empty"></span>
 						</div>
 						<button type="button" class="btn btn-primary">Buy Now</button>
-<<<<<<< HEAD
 						<button type="button" class="view btn btn-default">View Details</button>
-=======
-						<button type="button" class="btn btn-default">View Details</button>
->>>>>>> 76f914fb4b9fdec4318a440d2580764332bc9486
 					</div>
 					<div class="items" id="grapeseed">
 						<div class="img">

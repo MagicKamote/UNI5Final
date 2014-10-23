@@ -230,7 +230,7 @@ body, .container {
         position: relative; }
         body .main-content .products-container .categories .items {
           width: 31.8%;
-          height: auto;
+          height: 520px;
           display: inline-block;
           position: relative;
           margin: 2% 0.5%;
@@ -279,8 +279,14 @@ body, .container {
               display: inline-block;
               position: relative; }
           body .main-content .products-container .categories .items button {
-            width: 100%;
-            margin: 0.2em 0; } }
+            width: 94%;
+            position: absolute;
+            margin: 0 3%;
+            left: 0;
+            right: 0;
+            bottom: 1em; }
+          body .main-content .products-container .categories .items .btn.btn-primary {
+            bottom: 3.8em; } }
 @media screen and (max-width: 1150px) and (min-width: 820px) {
   body .main-content {
     width: 100%;
@@ -317,14 +323,23 @@ body, .container {
         position: relative; }
         body .main-content .products-container .categories .items {
           width: 47.7%;
-          height: auto;
+          height: 520px;
           display: inline-block;
           position: relative; }
           body .main-content .products-container .categories .items .img {
             width: 98.5%;
             height: 250px;
             display: inline-block;
-            position: relative; } }
+            position: relative; }
+          body .main-content .products-container .categories .items button {
+            width: 94%;
+            position: absolute;
+            margin: 0 3%;
+            left: 0;
+            right: 0;
+            bottom: 1em; }
+          body .main-content .products-container .categories .items .btn.btn-primary {
+            bottom: 3.8em; } }
 @media screen and (max-width: 820px) {
   body .main-content {
     width: 100%;
@@ -361,7 +376,7 @@ body, .container {
         position: relative; }
         body .main-content .products-container .categories .items {
           width: 97%;
-          height: auto;
+          height: 520px;
           display: inline-block;
           position: relative; }
           body .main-content .products-container .categories .items .img {
@@ -369,7 +384,16 @@ body, .container {
             height: 250px;
             display: inline-block;
             position: relative;
-            background-position: 50%; } }
+            background-position: 50%; }
+          body .main-content .products-container .categories .items button {
+            width: 94%;
+            position: absolute;
+            margin: 0 3%;
+            left: 0;
+            right: 0;
+            bottom: 1em; }
+          body .main-content .products-container .categories .items .btn.btn-primary {
+            bottom: 3.8em; } }
 .modal-dialog {
   width: 70%;
   text-align: center; }
@@ -448,7 +472,7 @@ body, .container {
       position: relative; }
       .main-content .products-container .categories .items {
         width: 270px;
-        height: auto;
+        height: 520px;
         display: inline-block;
         position: relative;
         margin: 2% 2%;
@@ -498,8 +522,14 @@ body, .container {
             display: inline-block;
             position: relative; }
         .main-content .products-container .categories .items button {
-          width: 100%;
-          margin: 0.2em 0; }
+          width: 94%;
+          position: absolute;
+          margin: 0 3%;
+          left: 0;
+          right: 0;
+          bottom: 1em; }
+        .main-content .products-container .categories .items .btn.btn-primary {
+          bottom: 3.8em; }
     .main-content .products-container #wellness .items:nth-child(1) .img {
       background-image: url("../images/royale/wellness/diabetwatch.png"); }
     .main-content .products-container #wellness .items:nth-child(2) .img {
