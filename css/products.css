@@ -370,6 +370,47 @@ body, .container {
             display: inline-block;
             position: relative;
             background-position: 50%; } }
+.modal-dialog {
+  width: 70%;
+  text-align: center; }
+
+.imageInsideModal {
+  width: 250px;
+  height: 250px;
+  display: inline-block;
+  position: relative;
+  margin: 0 auto; }
+
+.modal-footer {
+  clear: both; }
+
+#fullDetails .modal-dialog .modal-content .modal-body .description {
+  text-align: left !important;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  position: relative; }
+  #fullDetails .modal-dialog .modal-content .modal-body .description .nameAndProduct h1 {
+    margin: 0; }
+  #fullDetails .modal-dialog .modal-content .modal-body .description .nameAndProduct .productName {
+    float: left;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2em;
+    font-weight: 700; }
+  #fullDetails .modal-dialog .modal-content .modal-body .description .nameAndProduct .price {
+    float: right;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2em;
+    font-weight: 400; }
+  #fullDetails .modal-dialog .modal-content .modal-body .description .productDescription {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 0.9em;
+    font-weight: 400; }
+
 .main-content {
   width: 100%;
   height: auto;
@@ -387,6 +428,8 @@ body, .container {
       font-size: 2em;
       font-weight: 700;
       color: #25a555; }
+    .main-content .sidebar #category {
+      margin: 0; }
     .main-content .sidebar ul li a span {
       float: right; }
   .main-content .products-container {

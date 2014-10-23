@@ -132,8 +132,37 @@
 						+default_style(97%,auto)
 						.img
 							+default_style(98.5%,250px)		
-							background-position: 50%				
+							background-position: 50%		
 
+.modal-dialog
+	width: 70%
+	text-align: center	
+.imageInsideModal
+	+default_style(250px,250px)
+	margin: 0 auto
+.modal-footer
+	clear: both
+
+#fullDetails 
+	.modal-dialog 
+		.modal-content 
+			.modal-body
+				.description
+					text-align: left !important
+					+default_style(100%,auto)
+					.nameAndProduct
+						h1
+							margin: 0
+						.productName
+							float: left
+							+bold(2em)							
+						.price
+							float: right
+							+regular(2em)
+					.productDescription
+						+default_style(100%,auto)
+						+regular(.9em)
+					
 .main-content
 	+default_style(100%,auto)
 	.sidebar
@@ -143,6 +172,8 @@
 		h1
 			+bold(2em)
 			color: $blue
+		#category
+			margin: 0
 		ul
 			li
 				a
