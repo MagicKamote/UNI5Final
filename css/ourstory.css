@@ -1,3 +1,197 @@
+@import url(reset.css);
+body, .container {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+.container {
+  overflow-y: hidden; }
+
+.header {
+  width: 100%;
+  height: 81px;
+  display: inline-block;
+  position: relative;
+  border-bottom: solid 2px #25a555; }
+  .header .menu {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    background-color: #ddd;
+    z-index: 10;
+    float: right; }
+  .header #menuicon-container {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    padding: 1em;
+    float: right;
+    margin-top: 1em;
+    padding: 1em;
+    margin-right: 2%;
+    cursor: pointer;
+    -webkit-transition: all 0.2s linear 0s;
+    -moz-transition: all 0.2s linear 0s;
+    -ms-transition: all 0.2s linear 0s;
+    -o-transition: all 0.2s linear 0s;
+    transition: all 0.2s linear 0s;
+    border: solid 1px transparent; }
+    .header #menuicon-container:hover {
+      border: solid 1px #25a555; }
+    .header #menuicon-container:hover #menuicon {
+      background-image: url("../images/menu1.png"); }
+    .header #menuicon-container #menuicon {
+      width: 1.5em;
+      height: 1.5em;
+      display: inline-block;
+      position: relative;
+      background-image: url("../images/menu.png");
+      background-size: 1.5em;
+      background-repeat: no-repeat;
+      -webkit-transition: all 0.2s linear 0s;
+      -moz-transition: all 0.2s linear 0s;
+      -ms-transition: all 0.2s linear 0s;
+      -o-transition: all 0.2s linear 0s;
+      transition: all 0.2s linear 0s; }
+  .header ul {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    float: right;
+    right: 2%;
+    margin: 0; }
+    .header ul li {
+      float: left;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 0.9em;
+      font-weight: 300;
+      margin: 0; }
+      @media screen and (max-width: 990px) {
+        .header ul li {
+          font-family: "Ubuntu", sans-serif;
+          font-size: 0.9em;
+          font-weight: 300; } }
+      .header ul li a {
+        padding: 2.6em 2.3em;
+        display: block;
+        color: #444;
+        -webkit-transition: all 0.2s linear 0s;
+        -moz-transition: all 0.2s linear 0s;
+        -ms-transition: all 0.2s linear 0s;
+        -o-transition: all 0.2s linear 0s;
+        transition: all 0.2s linear 0s;
+        border: solid 1px transparent; }
+        .header ul li a:hover {
+          color: #fff;
+          border: solid 1px #25a555;
+          background-color: #25a555;
+          text-decoration: none; }
+      .header ul li:nth-child(4) {
+        height: 28px !important; }
+    .header ul li#searchBarMargin {
+      margin-top: 1.85em;
+      margin-left: 15px;
+      height: 28px;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 1em;
+      font-weight: 300; }
+      .header ul li#searchBarMargin form .input-group {
+        width: 14em; }
+        .header ul li#searchBarMargin form .input-group .form-control.search {
+          width: 100%;
+          height: 28px; }
+  .header #logo {
+    width: 163px;
+    height: 65px;
+    display: inline-block;
+    position: relative;
+    margin: 0.5em 0;
+    float: left;
+    background-image: url("../images/logo.png");
+    background-size: 163px 65px;
+    margin-left: 3%; }
+
+.footer {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  background-color: #25a555;
+  color: #fff !important; }
+  .footer .items {
+    width: auto;
+    height: auto;
+    display: table;
+    position: relative;
+    margin: 1% auto; }
+    .footer .items ul {
+      width: auto;
+      height: auto;
+      display: table;
+      position: relative;
+      float: left;
+      margin: 0.2em 3em; }
+      .footer .items ul li {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 1em;
+        font-weight: 300; }
+        .footer .items ul li hr {
+          width: 100%;
+          margin: 0.5em 0; }
+        .footer .items ul li a {
+          color: #fff;
+          font-family: "Ubuntu", sans-serif;
+          font-size: 1em;
+          font-weight: 300; }
+          .footer .items ul li a:hover {
+            text-decoration: none; }
+        .footer .items ul li h1 {
+          font-family: "Ubuntu", sans-serif;
+          font-size: 1em;
+          font-weight: 700;
+          margin: 0; }
+        .footer .items ul li .social-media-icon {
+          width: 35px;
+          height: 35px;
+          background-size: 35px;
+          display: block;
+          background-color: #ddd;
+          margin: 0.3em 0; }
+          .footer .items ul li .social-media-icon span {
+            display: block;
+            margin-left: 40px;
+            position: relative;
+            top: 7px; }
+        .footer .items ul li #smi1 {
+          background-image: url("../images/fb.jpg"); }
+        .footer .items ul li #smi2 {
+          background-image: url("../images/tw.jpg"); }
+        .footer .items ul li #smi3 {
+          background-image: url("../images/gp.jpg"); }
+  .footer .bottom-footer {
+    margin-top: 1em;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1em;
+    font-weight: 300; }
+    .footer .bottom-footer a {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 1em;
+      font-weight: 700;
+      color: #fff; }
+
+body .header {
+  z-index: 20 !important;
+  background-color: #fff; }
+
 body, .container {
   width: 100%;
   height: auto;
@@ -10,48 +204,52 @@ body, .container {
   width: 100%;
   height: auto;
   display: inline-block;
-  position: relative; }
-  .main-content .ourstory {
-    width: 100%;
-    height: auto;
+  position: relative;
+  z-index: -1 !important; }
+  .main-content .founder {
+    width: 540px;
+    height: 686px;
     display: inline-block;
     position: relative;
-    text-align: center; }
-    .main-content .ourstory h1 {
-      font-family: "Ubuntu", sans-serif;
-      font-size: 3em;
-      font-weight: 700;
-      color: #25a555; }
-    .main-content .ourstory span {
-      width: 85%;
-      display: inline-block;
-      font-family: "Ubuntu", sans-serif;
-      font-size: 1.5em;
-      font-weight: 300; }
-  .main-content .chairman {
-    width: 100%;
-    height: auto;
-    display: inline-block;
-    position: relative;
-    text-align: center; }
-    .main-content .chairman h1 {
-      font-family: "Ubuntu", sans-serif;
-      font-size: 3em;
-      font-weight: 700;
-      color: #25a555; }
-    .main-content .chairman span {
-      width: 85%;
-      display: inline-block;
-      font-family: "Ubuntu", sans-serif;
-      font-size: 1.5em;
-      font-weight: 300; }
-    .main-content .chairman img {
-      width: 300;
-      height: 300;
+    background-size: 200%;
+    background-position: 80%;
+    background-image: url("../images/founder.JPG");
+    float: left; }
+    .main-content .founder .description {
+      width: 100%;
+      height: auto;
       display: inline-block;
       position: relative;
-      border-radius: 100em;
-      background-color: #25a555;
-      margin-bottom: 3em; }
+      background-color: rgba(37, 165, 85, 0.7);
+      color: #fff;
+      padding: 3em 1em;
+      position: absolute;
+      bottom: 0; }
+      .main-content .founder .description h1 {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 3em;
+        font-weight: 700;
+        margin: 0;
+        padding: 0; }
+      .main-content .founder .description span {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 1.5em;
+        font-weight: 300; }
+  .main-content .text {
+    width: 59%;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    float: right;
+    z-index: 0; }
+    .main-content .text h1 {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 3em;
+      font-weight: 700;
+      margin: 0.1em 0; }
+    .main-content .text span {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 1em;
+      font-weight: 300; }
 
 /*# sourceMappingURL=ourstory.css.map */

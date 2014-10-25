@@ -1,3 +1,5 @@
+@import 'defaultsheet.sass'
+
 $blue: #25a555
 $black: #555
 
@@ -28,7 +30,10 @@ $black: #555
 	-ms-transition: all .2s linear 0s
 	-o-transition: all .2s linear 0s
 	transition: all .2s linear 0s
-
+body 
+	.header
+		z-index: 20 !important
+		background-color: #fff
 
 body,.container
 	+default_style(100%,auto)
@@ -37,30 +42,33 @@ body,.container
 
 .main-content
 	+default_style(100%,auto)
-	.ourstory
-		+default_style(100%,auto)
-		//background-color: $black
-		text-align: center
+	z-index: -1 !important
+	.founder
+		+default_style(540px,686px)
+		background-size: 200%
+		background-position: 80%
+		background-image: url('../images/founder.JPG')
+		float: left		
+		.description
+			+default_style(100%,auto)
+			background-color: rgba(37,165,85,.7)
+			color: #fff
+			padding: 3em 1em
+			position: absolute
+			bottom: 0
+			
+			h1
+				+bold(3em)
+				margin: 0
+				padding: 0
+			span
+				+light(1.5em)
+	.text
+		+default_style(59%,auto)
+		float: right
+		z-index: 0
 		h1
 			+bold(3em)
-			color: $blue
+			margin: .1em 0
 		span
-			width: 85%
-			display: inline-block
-			+light(1.5em)
-	.chairman
-		+default_style(100%,auto)
-		//background-color: $black
-		text-align: center
-		h1
-			+bold(3em)
-			color: $blue
-		span
-			width: 85%
-			display: inline-block
-			+light(1.5em)
-		img
-			+default_style(300,300,inline-block)
-			border-radius: 100em
-			background-color: $blue
-			margin-bottom: 3em
+			+light(1em)

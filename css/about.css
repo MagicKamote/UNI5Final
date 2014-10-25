@@ -213,6 +213,12 @@ body, .container {
       font-size: 1.5em;
       font-weight: 300; }
 
+.fb_iframe_widget,
+.fb_iframe_widget span,
+.fb_iframe_widget span iframe[style] {
+  min-width: 100% !important;
+  width: 100% !important; }
+
 .main-content {
   width: 100%;
   height: auto;
@@ -397,5 +403,35 @@ body, .container {
         text-decoration: none;
         background-color: #25a555;
         color: #fff; }
+  .main-content .feedback {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    background-color: #25a555;
+    padding: 2%;
+    border-bottom: solid 1px #fff; }
+    .main-content .feedback div {
+      float: left; }
+    .main-content .feedback .firstHalf {
+      width: 40%;
+      height: auto;
+      display: inline-block;
+      position: relative;
+      color: #fff; }
+      .main-content .feedback .firstHalf h1 {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 3em;
+        font-weight: 700;
+        margin: 0; }
+      .main-content .feedback .firstHalf span {
+        color: #fff; }
+    .main-content .feedback .secondHalf {
+      width: 59%;
+      height: 300px;
+      display: inline-block;
+      position: relative;
+      background-color: #fff;
+      margin-left: 0.9%; }
 
 /*# sourceMappingURL=about.css.map */

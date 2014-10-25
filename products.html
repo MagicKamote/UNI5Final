@@ -56,6 +56,10 @@
 			  	$('#package').show(150)
 			  }
 			});
+		$('#fullDetails').on('hidden.bs.modal', function () {
+  				$('#fullDetails .modal-dialog .modal-content .modal-body #ytd').attr('src','')
+			})
+
 		$('.main-content .products-container .categories .items .btn.btn-default').on('click', function(event) {
 			  	event.preventDefault();
 			  	$('#fullDetails .modal-dialog .modal-content .modal-body .imageInsideModal').remove()
@@ -69,12 +73,13 @@
 			  	var modalBody = $('#fullDetails .modal-dialog .modal-content .modal-body')	
 			  	imgToAppend.css({"background-image":imgPath, "background-size":imgCopied.css("background-size"),"background-position":imgCopied.css("background-position"),"background-repeat":imgCopied.css("background-repeat")}).removeClass().addClass('imageInsideModal')  	
 				$('#fullDetails').modal('show')
-				imgToAppend.insertBefore('#fullDetails .modal-dialog .modal-content .modal-body .description')
+				// imgToAppend.insertBefore('#fullDetails .modal-dialog .modal-content .modal-body .description')
 				// alert(parentID)
-
+				// <iframe width="560" height="315" src="//www.youtube.com/embed/w3gZ4X0wJhg" frameborder="0" allowfullscreen></iframe>
 
 				if(parentID == 'diabetwatch')
 				{
+					$('#fullDetails .modal-dialog .modal-content .modal-body #ytd').attr('src','//www.youtube.com/embed/w3gZ4X0wJhg')
 					var descriptionToAppend = "Diabetwatch vs. Diabetes Diabetes is a condition, wherein blood glucose levels are above normal. Most of the food we eat is converted into glucose, or sugar, which our bodies use for energy. The pancreas, an organ that lies near the stomach, produces a hormone called insulin to help glucose get into the cells of our bodies. <br><br> When a person has diabetes, the body either does not manufacture enough insulin, or cannot use its own insulin as it should. This condition causes sugar to build up in the blood. This disease can create negative health complications, which include heart disease, blindness, kidney failure, and lower-extremity amputations. Diabetes is considered as the sixth leading cause of death in the United States. And according to Francisco Pasaporte, President of the Philippine Association of Diabetes Educators, 500 Filipinos are being diagnosed with diabetes everyday (as of June 2008). <br><br> Signs And Symptoms Of Diabetes<br><br> Individuals who think they might have diabetes must first consult with a physician for proper diagnosis. Some of the common symptoms of diabetes are frequent urination, excessive thirst, unexplained weight loss, sudden vision changes, extreme hunger, numbness or tingling in the hands or feet, very dry skin and sores that are slow to heal."					
 					var name = "Diabet Watch"
 					var price = "P575.00"
@@ -85,6 +90,7 @@
 				}
 				else if (parentID == 'fiberich')
 				{
+					$('#fullDetails .modal-dialog .modal-content .modal-body #ytd').attr('src','//www.youtube.com/embed/Pi-poM9GXHw')
 					var descriptionToAppend = "100% psyllium seed husk that comes from the crushed seed of the plantago ovata plant. Psyllium is a natural fiber grain, not related to wheat, that yields 60-70 percent solubility. <br><br> • PROMOTES A HEALTHY DIGESTIVE SYSTEM. Helps eliminate constipation and regulates bowel movement.<br><br> • HELPS LOWER CHOLESTEROL LEVEL. Binds with cholesterol secreted in bile acids and excretes it before it is absorbed in the bloodstream.<br><br> • HELPS YOU STAY FIT. Adds volume to your meals without adding calories and staves off hunger to keep you feel full longer. •AIDS IN BLOOD SUGAR MANAGEMENT. Slows down digestion to allow gradual release of glucose.<br><br> •HELPS PREVENT DISEASES. Acts like an internal broom which cleans the walls of digestive tracts, helps remove toxins from digestive system and colon, and keeps an optimal PH in intestines to prevent microbes from producing cancer substances.<br><br>"					
 					var name = "Fiber Rich"
 					var price = "P605.00"
@@ -470,7 +476,7 @@
 				<li><a href="index.html">HOME</a></li>
 				<li><a href="products.html">PRODUCTS</a></li>
 				<li><a href="about.html">ABOUT</a></li>
-				<li><a href="career.html">CAREERS</a></li>
+				<li><a href="career.php">CAREERS</a></li>
 				<li id="searchBarMargin">
 					<form>
 						<div class="input-group">
@@ -1218,6 +1224,7 @@
         <h4 class="modal-title">Item Description</h4>
       </div>
       <div class="modal-body">
+      	<iframe id="ytd" width="560" height="315" src="//www.youtube.com/embed/w3gZ4X0wJhg" frameborder="0" allowfullscreen></iframe>
         <div class="description">
         	<div class='nameAndProduct'>
         		<h1 class="productName">Diabetwatch</h1>

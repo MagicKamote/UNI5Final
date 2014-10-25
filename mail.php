@@ -47,10 +47,10 @@ $mail->SMTPSecure = "ssl"; // secure transfer enabled REQUIRED for GMail
 $mail->Host = "smtp.gmail.com";
 $mail->Port = 465; // 587 or 465
 $mail->IsHTML(true);
-$mail->Username = "jeru.pajulas27@gmail.com";
-$mail->Password = "mirashaine27";
-$mail->SetFrom("jeru.pajulas27@gmail.com");
-$mail->Subject = "Testing SMTP";
+$mail->Username = "aldrinlim81@gmail.com";
+$mail->Password = "32n1u5ynvr";
+$mail->SetFrom("aldrinlim81@gmail.com");
+$mail->Subject = "New Member Applied";
 $mail->Body = $body;
 $mail->AddAddress($email);
 if(!$mail->Send()){
