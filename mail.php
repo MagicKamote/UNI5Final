@@ -1,7 +1,7 @@
 <?php
 
-require_once("..\PHPMailer-master\class.phpmailer.php");
-require_once("..\PHPMailer-master\class.smtp.php");
+require_once("PHPMailer-master\class.phpmailer.php");
+require_once("PHPMailer-master\class.smtp.php");
 
 $name = ($_POST['last_name']) . ', ';
 $name .= ($_POST['first_name'] . ' ');
@@ -51,6 +51,11 @@ $mail->Username = "aldrinlim81@gmail.com";
 $mail->Password = "32n1u5ynvr";
 $mail->SetFrom("aldrinlim81@gmail.com");
 $mail->Subject = "New Member Applied";
+$mail->Username = "uni5wellness@gmail.com";
+$mail->Password = "uni5wellness123";
+$mail->SetFrom("uni5wellness@gmail.com");
+$mail->Subject = "<bold>Welcome to Uni5Wellness International</bold>";
+>>>>>>> d5795e3be06a71e0023825d86e54ce1efd032243
 $mail->Body = $body;
 $mail->AddAddress($email);
 if(!$mail->Send()){
@@ -58,6 +63,7 @@ if(!$mail->Send()){
 }
 else{
     echo "Message has been sent";
+    echo $body;
 }
 
 ?>
