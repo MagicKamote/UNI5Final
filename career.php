@@ -77,23 +77,16 @@
 				    	<label for="inputEmail">PHONE</label>
 				        <input class="form-control" id="inputEmail" placeholder="Phone" type="text" name="phone">
 					    <label>GENDER</label>
-<<<<<<< HEAD
-					    <select name='gender' class="form-control">
-=======
 					    <select class="form-control" name="gender">
->>>>>>> c7bd631a6edb14b6dd9654ec25bebd34f47ef6ca
 					    	<option>Select Gender...</option>
 					    	<option>Male</option>
 					    	<option>Female</option>
 					    </select>
 				    </div>
-			    </form>
-			    <br>
-			    <!-- <a href="JavaScript: void(0);">Submit</a> -->
-			    <!-- <input id="submit" type="submit" name="submit" value="Submit"> -->
-			</div>
+				    <input id="submit" type="submit" name="submit" value="Submit">
+				</form>
 			<!-- <a href="mail.php" name="submit">Submit</a> -->
-			<input id="submit" type="submit" name="submit" value="Submit">
+			
 		</div>
 
 		<div class="footer">
@@ -119,17 +112,17 @@
 				<ul>
 					<li><h1>Terms & Condition</h1></li>
 					<li><hr></li>
-					<li><a href="#">Privacy Policy</a></li>
-					<li><a href="#">Terms of Use</a></li>
-					<li><a href="#">Legal Notice</a></li>
-					<li><a href="#">Distributor Policy</a></li>
-					<li><a href="#"> Code of Ethics</a></li>
-					<li><a href="#">Product Policy </a></li>
+					<li><a href="policy.html">Privacy Policy</a></li>
+					<li><a href="policy.html">Terms of Use</a></li>
+					<li><a href="policy.html">Legal Notice</a></li>
+					<li><a href="policy.html">Distributor Policy</a></li>
+					<li><a href="policy.html"> Code of Ethics</a></li>
+					<li><a href="policy.html">Product Policy </a></li>
 				</ul>
 				<ul>
 					<li><h1>FIND US</h1></li>
 					<li><hr></li>
-					<li><a href="#"	id="smi1" class="social-media-icon" target="_blank"><span>Facebook</span></a></li>
+					<li><a href="https://www.facebook.com/uni5wellness"	id="smi1" class="social-media-icon" target="_blank"><span>Facebook</span></a></li>
 					<li><a href="#" id="smi2" class="social-media-icon" target="_blank"><span>Twitter</span></a></li>
 					<li><a href="#" id="smi3" class="social-media-icon" target="_blank"><span>Google+</span></a></li>
 				</ul>

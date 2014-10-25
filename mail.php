@@ -1,7 +1,7 @@
 <?php
 
-require_once("..\PHPMailer-master\class.phpmailer.php");
-require_once("..\PHPMailer-master\class.smtp.php");
+require_once("PHPMailer-master\class.phpmailer.php");
+require_once("PHPMailer-master\class.smtp.php");
 
 $name = ($_POST['last_name']) . ', ';
 $name .= ($_POST['first_name'] . ' ');
@@ -47,10 +47,10 @@ $mail->SMTPSecure = "ssl"; // secure transfer enabled REQUIRED for GMail
 $mail->Host = "smtp.gmail.com";
 $mail->Port = 465; // 587 or 465
 $mail->IsHTML(true);
-$mail->Username = "jeru.pajulas27@gmail.com";
-$mail->Password = "mirashaine27";
-$mail->SetFrom("jeru.pajulas27@gmail.com");
-$mail->Subject = "Testing SMTP";
+$mail->Username = "uni5wellness@gmail.com";
+$mail->Password = "uni5wellness123";
+$mail->SetFrom("uni5wellness@gmail.com");
+$mail->Subject = "<bold>Welcome to Uni5Wellness International</bold>";
 $mail->Body = $body;
 $mail->AddAddress($email);
 if(!$mail->Send()){
@@ -58,6 +58,7 @@ if(!$mail->Send()){
 }
 else{
     echo "Message has been sent";
+    echo $body;
 }
 
 ?>
